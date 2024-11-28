@@ -4,7 +4,7 @@ import React from "react";
 // import logo from '/Brand/logo.png'
 const Header = () => {
   return (
-    <div className="h-[64px] px-[80px] fixed flex justify-between items-center w-full bg-[#181818]">
+    <div className="h-[64px] px-[80px] fixed flex justify-between items-center w-full bg-[#181818] z-30">
 
 
       <div className=" ">

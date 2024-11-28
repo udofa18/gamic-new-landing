@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "/public/bg/sec2.png";
+import bg from "/public/bg/sec2.webp";
 import Image from "next/image";
 
 type Props = {};
@@ -54,7 +54,7 @@ const Section2 = (props: Props) => {
         <h1 className="font-[Avenir-Heavy] text-[40px] text-center w-[700px] pb-20">Powered by 16+ chains, supported 
         by our ecosystem partners.</h1>
 
-        <Image src="/ui/partners.png" width={1128} height={250} alt="partners"/>
+        <Image src="/ui/partners.webp" width={1128} height={250} alt="partners"/>
 
       </div>
     </div>

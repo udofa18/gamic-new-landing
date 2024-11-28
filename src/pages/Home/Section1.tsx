@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "/public/bg/dark-bg.png";
+import bg from "/public/bg/dark-bg.webp";
 import { Button } from "antd";
 import Image from "next/image";
 type Props = {};
@@ -20,7 +20,7 @@ const Section1 = (props: Props) => {
         </span>
       </div>
       <div className="flex items-center  justify-center mt-10">
-        <Image src="/ui/sec1.png" width={1108} height={812} alt="UI1"/>
+        <Image src="/ui/sec1.webp" width={1108} height={812} alt="UI1"/>
       </div>
     </div>
   );
