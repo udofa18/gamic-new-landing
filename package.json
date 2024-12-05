@@ -10,9 +10,15 @@
   },
   "dependencies": {
     "antd": "^5.21.6",
+    "framer-motion": "^11.12.0",
     "next": "15.0.3",
+    "rc-queue-anim": "^2.0.0",
+    "rc-scroll-anim": "^2.7.6",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-animations": "^1.0.0",
+    "react-dom": "^18.3.1",
+    "react-intersection-observer": "^9.13.1",
+    "react-marquee-slider": "^1.1.5"
   },
   "devDependencies": {
     "@types/node": "^20",

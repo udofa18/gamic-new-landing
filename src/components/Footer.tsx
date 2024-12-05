@@ -4,21 +4,21 @@ import { Button } from "antd";
 import Image from "next/image";
 const Footer = () => {
   return (
-    <div style={{ backgroundImage: `url(${bg.src})`, backgroundPosition: "center",  }} className="text-center w-screen pt-[67px] overflow-hidden px-[80px]">
-    <div className="w-[937.54px] m-auto flex flex-col gap-8">
-      <h1 className=" text-[64px] font-[Avenir-Heavy]">
+    <div style={{ backgroundImage: `url(${bg.src})`, backgroundPosition: "center",  }} className="text-center w-screen pt-[67px] overflow-hidden lg:px-[80px] px-[10px]">
+    <div className="lg:w-[937.54px] m-auto flex flex-col gap-8 w-full ">
+      <h1 className=" lg:text-[64px] font-[Avenir-Heavy] text-[40px]">
       JOIN THE GNGSTAR REVOLUTION TODAY      </h1>
       <p className="text-[24px]">Take advantage of the amazing 
       decentralized social communication tool.</p>
       
-      <span className="flex m-auto gap-6">
+      <span className="flex m-auto gap-6 lg:flex-row flex-col ">
           <Button className="bg-white  inner-shadow2 text-black p-6 border-none "><img src="/icons/desk.png"/> Launch Gamic web</Button>
           <Button className="bg-[#FB6320] shadow-inner  inner-shadow text-white p-6 border-none hover:bg-[#FB6320]" ><img src="/icons/mob.png"/> Download Gamic Mobile </Button>
 
       </span>
     </div>
 
-    <div className='py-40 flex justify-between'>
+    <div className='py-40 flex justify-between lg:flex-row flex-col'>
     <div className="">
             <Image
               src="/brand/logo2.webp"
@@ -32,7 +32,7 @@ const Footer = () => {
 
           <div>
           <div className="px-4 text-left">
-            <div className="flex justify-between gap-28">
+            <div className="flex justify-between lg:gap-28 flex-wrap gap-8">
                 <div>
                     <h3 className="text-lg font-semibold mb-2">Features</h3>
                     <ul className='gap-2 flex flex-col'>
