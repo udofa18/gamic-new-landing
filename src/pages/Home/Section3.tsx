@@ -141,8 +141,7 @@ const Section3 = (props: Props) => {
 
             <div className="flex flex-col justify-between ">
               <p className="text-2xl font-[Avenir-Medium]">
-                Claim or airdrop tokens seamlessly to your community.
-              </p>
+              Effortlessly claim or airdrop tokens to your network.               </p>
               <motion.div
                 initial="hidden"
                 whileInView="visible"

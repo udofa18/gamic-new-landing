@@ -7,7 +7,7 @@ type Props = {};
 
 const Section4 = (props: Props) => {
   return (
-    <div className="m-auto items-center lg:p-20 p-5 flex flex-col gap-8 bg-[#F6F8FA] text-black w-full">
+    <div className="m-auto items-center lg:p-20 p-5 flex flex-col gap-8 bg-[#F6F8FA] text-black w-screen">
       <div className="flex px-2 gap-2 border rounded-full border-[#1671D94D] m-auto text-[#1671D9] bg-[#1671D90D] w-auto text-[14px] items-center">
         <Image src="/icons/wallet.png" width={18} height={14} alt="user-icon" />
         <p>Web3 Wallet</p>
@@ -25,7 +25,7 @@ const Section4 = (props: Props) => {
         <Button className="border-none shadow-lg px-4 my-5">Learn more</Button>
       </span>
 
-      <div className="flex lg:flex-row flex-col gap-4 lg:p-10 p-2 w-full overflow-hidden">
+      <div className="flex lg:flex-row flex-col gap-4 lg:p-10 p-2 w-full overflow-hidden items-center justify-center ">
         <div className="bg-[#EEF1D7] lg:w-[736px] w-full rounded-2xl p-10 overflow-clip pb-0 ">
           
           <img src="/ui/wallet.webp"  alt="UI1" className="m-auto  lg:w-[585px] lg:h-[640] h-full w-full"/>
@@ -44,8 +44,8 @@ const Section4 = (props: Props) => {
           </div>
         </div>
       </div>
-      <div className="flex gap-4 p-4 lg:flex-row flex-col lg:h-[552px] h-full items-center w-full">
-        <div className="bg-[#FBDFD2] lg:w-[521px] w-full rounded-2xl p-10  pb-0 flex flex-col items-center">
+      <div className="flex gap-4 p-4 lg:flex-row flex-col lg:h-[552px] h-full justify-center w-full m-auto">
+        <div className="bg-[#FBDFD2] lg:w-[521px] w-full rounded-2xl p-10 h-full overflow-hidden  pb-0 flex flex-col items-center">
           <p className="text-[24px] text-[#181818] text-center  font-[Avenir-Medium] py-4">
           Life happens. Your guardians 
           are here to be your safety net.</p>

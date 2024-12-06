@@ -47,12 +47,12 @@ const Section1 = (props: Props) => {
         <h1 className="lg:text-[64px] text-[40px] font-[Avenir-Heavy] lg:leading-[72px] leading-10">
           Chat, build communities and transact.
         </h1>
-        <p className="text-[24px]">
+        <p className="text-[24px] text-[#9A9A9A]">
           {" "}
           The Future of Decentralized Social Networking
         </p>
         <span className="flex flex-col m-auto gap-6 lg:flex-row ">
-          <Button className="bg-white inner-shadow2 text-black p-6 border-none">
+          <Button className="bg-white inner-shadow2 text-black p-6 border-none ">
             <img src="/icons/desk.png" alt="Launch Gamic web" /> Launch Gamic
             web
           </Button>
@@ -104,8 +104,14 @@ const Section1 = (props: Props) => {
         <span className="absolute top-[650px] left-[940.71px]">
           <img src="/ui/aux7.png"className="w-[141px]" />
         </span>
-        <span className="absolute top-[379px] left-[1121px]">
+        <span className="absolute top-[379px] right-[84px] lg:block hidden">
           <img src="/ui/aux8.png"className="w-[280px]" />
+        </span>
+        <span className="absolute top-[360px] right-[85px] lg:block hidden">
+          <img src="/ui/aux9.png"className="w-[72px]" />
+        </span>
+        <span className="absolute top-[520px] right-[350px] lg:block hidden">
+          <img src="/ui/aux10.png"className="w-[72px]" />
         </span>
       </div>
 

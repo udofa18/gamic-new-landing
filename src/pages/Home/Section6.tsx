@@ -7,7 +7,7 @@ type Props = {};
 
 const Section6 = (props: Props) => {
   return (
-    <div className="m-auto items-center lg:p-20 p-5 flex flex-col gap-8 bg-[#F3F1F7] text-black w-full">
+    <div className="m-auto items-center lg:p-20 p-5 flex flex-col gap-8 bg-[#F3F1F7] text-black w-screen">
       <div className="lg:flex gap-4 ">
         <div className="w-full lg:w-[736px] flex flex-col gap-2  rounded-2xl pt-10  items-left justify-center overflow-hidden lg:p-10 p-4">
           <div className="flex px-2 gap-2 border rounded-full border-[#2A799B]  text-[#2A799B] bg-[#2A799B0D]/5 w-[fit-content] text-[14px] items-center">

@@ -5,6 +5,7 @@ import React from "react";
 import  { useState } from 'react';
 import { Button, Drawer } from 'antd';
 // import logo from '/Brand/logo.png'
+import { CiMenuFries } from "react-icons/ci";
 const Header = () => {
   const [open, setOpen] = useState(false);
 
@@ -47,10 +48,10 @@ const Header = () => {
           </li>
         </ul>
       </div>
-      <Button type="primary" onClick={showDrawer} className="lg:hidden">
-        Open
+      <Button type="primary" onClick={showDrawer} className="lg:hidden bg-transparent text-white border-none shadow-none text-lg">
+      <CiMenuFries />
       </Button>
-      <Drawer title="" onClose={onClose} open={open} className="bg-black " style={{backgroundColor: "black", color:"white", }} >
+      <Drawer title="" onClose={onClose} open={open} className="bg-black " style={{backgroundColor: "#181818", color:"white", }} >
       <ul className="flex gap-10 flex-col">
           <li>
             <Link href="#">Explore</Link>
