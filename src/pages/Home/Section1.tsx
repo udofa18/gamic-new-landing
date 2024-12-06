@@ -1,5 +1,4 @@
 "use client";
-import React, { useEffect, useState } from "react";
 import bg from "/public/bg/dark-bg.webp";
 import { Button } from "antd";
 import Image from "next/image";
@@ -8,25 +7,7 @@ import { motion } from "framer-motion";
 type Props = {};
 
 const Section1 = (props: Props) => {
-  const [isVisible, setIsVisible] = useState(true); // Start as true to show the image initially
 
-  // Scroll event listener to handle visibility
-  const handleScroll = () => {
-    const scrollY = window.scrollY;
-    // Set isVisible based on scroll position
-    if (scrollY > 100) {
-      setIsVisible(false); // Image goes down when scrolled down
-    } else {
-      setIsVisible(true); // Image comes up when at the top
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <div
