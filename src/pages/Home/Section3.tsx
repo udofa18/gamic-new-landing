@@ -49,7 +49,7 @@ const Section3 = (props: Props) => {
       </motion.div>
 
       {/* Animated Flex Sections */}
-      <div className="flex lg:flex-row flex-col gap-4 lg:p-10 p-2 w-full overflow-hidden" >
+      <div className="flex lg:flex-row flex-col gap-4 lg:p-10 p-2 w-full overflow-hidden items-center justify-center" >
         <motion.div
           className="bg-[#FBE2B7] lg:w-[521px] w-full rounded-2xl lg:p-10 p-4 overflow-clip"
           initial="hiddenLeft"

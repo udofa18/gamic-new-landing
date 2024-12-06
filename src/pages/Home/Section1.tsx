@@ -24,9 +24,9 @@ const Section1 = (props: Props) => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
-      className="text-center w-full lg:w-screen  overflow-hidden lg:px-[80px] px-2 relative"
+      className="text-center w-full lg:w-screen h-screen overflow-hidden lg:px-[80px] px-2 relative flex flex-col justify-between"
     >
-      <div className="lg:w-[744px] w-full m-auto flex flex-col gap-8 lg:px-20  px-5 pt-[262px]">
+      <div className="lg:w-[744px] w-full m-auto flex flex-col gap-8 lg:px-20  px-5 pt-[102px] z-10">
         <motion.div
           initial="hiddenUp"
           whileInView="visible"
@@ -80,7 +80,7 @@ const Section1 = (props: Props) => {
       </div>
 
       <motion.div
-        className="flex items-center justify-center mt-10 flex-wrap"
+        className="flex items-center justify-center  flex-wrap mb-0"
         initial={{ scale: 0.1, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{
@@ -102,31 +102,31 @@ const Section1 = (props: Props) => {
 
       <div>
         <span className="absolute lg:top-[210px] top-[50px] left-[84px]">
-          <img src="/ui/aux1.png" className="w-[275px] " />
+          <img src="/ui/aux1.png" className="lg:w-[275px] w-44 " />
         </span>
 
-        <span className="absolute lg:top-[535px] top-[350px] lg:left-[84px] left-[40px]">
+        <span className="absolute lg:top-[535px] top-[420px] lg:left-[84px] left-[30px]">
           <img src="/ui/aux2.png" className="w-[72px]" />
         </span>
-        <span className="absolute lg:top-[110px] top-[200px]  left-[100px] lg:left-[538px]">
+        <span className="absolute lg:top-[110px] top-[170px]  left-[30px] lg:left-[538px]">
           <img src="/ui/aux3.png" className="w-[66px]" />
         </span>
         <span className="absolute top-[169.61px] right-[400px]">
           <img src="/ui/aux4.png" className="w-[88px]" />
         </span>
-        <span className="absolute top-[650.61px] left-[538.71px]  ">
+        <span className="absolute bottom-[200.61px] left-[500.71px]  ">
           <img src="/ui/aux6.png" className="w-[80px]" />
         </span>
-        <span className="absolute top-[650px] left-[940.71px]">
+        <span className="absolute bottom-[200px] right-[450.71px]">
           <img src="/ui/aux7.png" className="w-[141px]" />
         </span>
-        <span className="absolute top-[379px] right-[84px] lg:block hidden">
+        <span className="absolute top-[250px] right-[84px] lg:block hidden">
           <img src="/ui/aux8.png" className="w-[280px]" />
         </span>
         <span className="absolute top-[360px] right-[85px] lg:block hidden">
           <img src="/ui/aux9.png" className="w-[72px]" />
         </span>
-        <span className="absolute top-[520px] right-[350px] lg:block hidden">
+        <span className="absolute lg:top-[520px] lg:right-[350px] top-[460px] right-[20px] ">
           <img src="/ui/aux10.png" className="w-[72px]" />
         </span>
       </div>
