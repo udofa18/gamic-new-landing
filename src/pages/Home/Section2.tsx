@@ -135,8 +135,8 @@ const Section2 = (props: Props) => {
         }}
       >
         {[...partners, ...partners,...partners,...partners,...partners].map((partner, index) => (
-        <li key={index} style={{ flex: '0 0 auto' }}>
-        <img src={partner} alt={`partner-${index}`} style={{ width: 'auto', height: 'auto' }} />
+        <li key={index} style={{ flex: "0 0 auto" }}>
+        <img src={partner} alt={`partner-${index}`} style={{ width: "auto", height: "auto" }} />
       </li>
         ))}
       </motion.ul>
@@ -151,8 +151,8 @@ const Section2 = (props: Props) => {
               repeat: Infinity,
             }}>
            {[...partners2, ...partners2,...partners2,...partners2,...partners2].map((partner, index) => (
-        <li key={index} style={{ flex: '0 0 auto' }}>
-        <img src={partner} alt={`partner-${index}`} style={{ width: 'auto', height: 'auto' }} />
+        <li key={index} style={{ flex: "0 0 auto" }}>
+        <img src={partner} alt={`partner-${index}`} style={{ width: "auto", height: "auto" }} />
       </li>
         ))}
           </motion.ul>
