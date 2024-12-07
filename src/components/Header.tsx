@@ -1,9 +1,9 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import  { useState } from 'react';
-import { Button, Drawer } from 'antd';
+import  { useState } from "react";
+import { Button, Drawer } from "antd";
 // import logo from '/Brand/logo.png'
 import { CiMenuFries } from "react-icons/ci";
 const Header = () => {
