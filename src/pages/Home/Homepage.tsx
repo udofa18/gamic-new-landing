@@ -1,11 +1,11 @@
 import React from "react";
-import Section1 from "./Section1";
-import Section2 from "./Section2";
-import Section3 from "./Section3";
-import Section4 from "./Section4";
-import Section5 from "./Section5";
-import Section6 from "./Section6";
-import Section7 from "./Section7";
+import Section1 from "@/pages/home/Section1";
+import Section2 from "@/pages/home/Section2";
+import Section3 from "@/pages/home/Section3";
+import Section4 from "@/pages/home/Section4";
+import Section5 from "@/pages/home/Section5";
+import Section6 from "@/pages/home/Section6";
+import Section7 from "@/pages/home/Section7";
 
 const Homepage = () => {
   return (

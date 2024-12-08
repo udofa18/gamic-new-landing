@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import { Button } from "antd";
-import bg from "/public/bg/dark-bg.webp";
 
 type Props = {};
 
