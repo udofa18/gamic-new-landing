@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.5",
+    "@emotion/styled": "^11.13.5",
+    "@emotion/unitless": "^0.7.5",
     "antd": "^5.21.6",
     "framer-motion": "^11.12.0",
     "next": "15.0.3",
