@@ -2,6 +2,7 @@
 import bg from "/public/bg/dark-bg.webp";
 import { Button } from "antd";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 type Props = {};
 
@@ -58,10 +59,10 @@ const Section1 = (props: Props) => {
             transition={{ duration: 0.3 }}
             viewport={{ once: false, amount: 0.3 }}
           >
-            <Button className="bg-white inner-shadow2 text-black p-6 border-none ">
-              <img src="/icons/desk.png" alt="Launch Gamic web" /> Launch Gamic
-              web
-            </Button>
+<Button className="bg-white inner-shadow2 text-black p-6 border-none ">
+  <Image src="/icons/desk.png" alt="Launch Gamic web" width={32} height={32} /> Launch Gamic
+  web
+</Button>
           </motion.div>
           <motion.div
             initial="hiddenRight"
@@ -70,10 +71,10 @@ const Section1 = (props: Props) => {
             transition={{ duration: 0.3 }}
             viewport={{ once: false, amount: 0.3 }}
           >
-            <Button className="bg-[#FB6320] shadow-inner inner-shadow text-white p-6 border-none hover:bg-[#FB6320] w-full">
-              <img src="/icons/mob.png" alt="Download Gamic Mobile" /> Download
-              Gamic Mobile
-            </Button>
+<Button className="bg-[#FB6320] shadow-inner inner-shadow text-white p-6 border-none hover:bg-[#FB6320] w-full">
+  <Image src="/icons/mob.png" alt="Download Gamic Mobile" width={32} height={32} /> Download
+  Gamic Mobile
+</Button>
           </motion.div>
         </span>
       </div>
@@ -90,43 +91,43 @@ const Section1 = (props: Props) => {
         }}
         viewport={{ once: false, amount: 0.5 }} // Animation replays when in view
       >
-        <img
-          src="/ui/sec1.png"
-          width={1108}
-          height={812}
-          alt="UI1"
-          className="w-[100%] lg:w-[1108px] h-full "
-        />
+<Image
+  src="/ui/sec1.png"
+  width={1108}
+  height={812}
+  alt="UI1"
+  className="w-[100%] lg:w-[1108px] h-full "
+/>
       </motion.div>
 
       <div>
         <span className="absolute lg:top-[210px] top-[50px] left-[84px]">
-          <img src="/ui/aux1.png" className="lg:w-[275px] w-44 " />
+<Image src="/ui/aux1.png" width={275} height={44} alt="aux1" />
         </span>
 
         <span className="absolute lg:top-[535px] top-[420px] lg:left-[84px] left-[30px]">
-          <img src="/ui/aux2.png" className="w-[72px]" />
+<Image src="/ui/aux2.png" width={72} height={72} alt="aux2" />
         </span>
         <span className="absolute lg:top-[110px] top-[170px]  left-[30px] lg:left-[538px]">
-          <img src="/ui/aux3.png" className="w-[66px]" />
+<Image src="/ui/aux3.png" width={66} height={66} alt="aux3" />
         </span>
         <span className="absolute top-[169.61px] right-[400px]">
-          <img src="/ui/aux4.png" className="w-[88px]" />
+<Image src="/ui/aux4.png" width={88} height={88} alt="aux4" />
         </span>
         <span className="absolute bottom-[200.61px] left-[500.71px]  ">
-          <img src="/ui/aux6.png" className="w-[80px]" />
+<Image src="/ui/aux6.png" width={80} height={80} alt="aux6" />
         </span>
         <span className="absolute bottom-[200px] right-[450.71px]">
-          <img src="/ui/aux7.png" className="w-[141px]" />
+<Image src="/ui/aux7.png" width={141} height={141} alt="aux7" />
         </span>
         <span className="absolute top-[250px] right-[84px] lg:block hidden">
-          <img src="/ui/aux8.png" className="w-[280px]" />
+<Image src="/ui/aux8.png" width={280} height={280} alt="aux8" />
         </span>
         <span className="absolute top-[360px] right-[85px] lg:block hidden">
-          <img src="/ui/aux9.png" className="w-[72px]" />
+<Image src="/ui/aux9.png" width={72} height={72} alt="aux9" />
         </span>
         <span className="absolute lg:top-[520px] lg:right-[350px] top-[460px] right-[20px] ">
-          <img src="/ui/aux10.png" className="w-[72px]" />
+<Image src="/ui/aux10.png" width={72} height={72} alt="aux10" />
         </span>
       </div>
     </div>
