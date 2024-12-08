@@ -1,7 +1,6 @@
 "use client";
 import bg from "/public/bg/dark-bg.webp";
 import { Button } from "antd";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 type Props = {};
@@ -91,7 +90,7 @@ const Section1 = (props: Props) => {
         }}
         viewport={{ once: false, amount: 0.5 }} // Animation replays when in view
       >
-        <Image
+        <img
           src="/ui/sec1.png"
           width={1108}
           height={812}
