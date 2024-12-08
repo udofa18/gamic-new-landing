@@ -1,0 +1,35 @@
+# Ignore node_modules (only if using serverless functions and dependencies are in package.json)
+node_modules/
+
+# Ignore local development files
+.env.local
+.env.development
+.env.test
+
+# Ignore test files
+__tests__/
+tests/
+*.test.js
+*.spec.js
+
+# Ignore build artifacts (if built locally)
+build/
+dist/
+out/
+
+# Ignore editor and system files
+*.log
+.DS_Store
+*.swp
+*.swo
+Thumbs.db
+
+# Ignore IDE-specific directories
+.vscode/
+.idea/
+
+# Ignore specific assets
+*.zip
+*.tar
+*.gz
+*.tmp
