@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Section7 = () => {
   return (
-    <div className="lg:p-20 p-0 bg-white text-black text-center w-screen">
+    <div className="lg:p-20 p-0 bg-white text-black text-center ">
         <p className="lg:text-[48px] text-[20px] font-[Avenir-Heavy] ">Backed by Global Leaders. 
         Built for You.</p>
 

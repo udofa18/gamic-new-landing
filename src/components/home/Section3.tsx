@@ -17,7 +17,7 @@ const Section3 = (props: Props) => {
   };
 
   return (
-    <div className="m-auto items-center lg:p-20 p-5 flex flex-col gap-8 bg-white text-black w-screen overflow-hidden">
+    <div className="m-auto items-center lg:p-20 p-2 flex flex-col gap-8 bg-white text-black overflow-hidden">
       {/* Badge */}
       <motion.div
         className="flex px-2 gap-2 border rounded-full border-[#FC6600] m-auto text-[#FC6600] bg-[#FC6600]/5 w-auto text-[14px] items-center"
@@ -115,7 +115,7 @@ const Section3 = (props: Props) => {
       {/* Additional Flex Sections */}
       <div className="flex gap-4 w-full lg:flex-row flex-col justify-center w-ful overflow-hidden">
         <motion.div
-          className="w-full lg:w-[736px] bg-[#EEF1D7] rounded-2xl pt-10 flex items-center justify-center overflow-hidden p-10"
+          className="w-full lg:w-[736px] bg-[#EEF1D7] rounded-2xl pt-10 flex items-center justify-center overflow-hidden lg:p-10 p-2"
           initial="hiddenLeft"
           whileInView="visible"
           variants={containerVariants}
@@ -149,12 +149,11 @@ const Section3 = (props: Props) => {
                 transition={{ duration: 0.6 }}
                 viewport={{ once: false, amount: 0.3 }}
               >
-                <Image
+                <img
                   src="/ui/airdrop1.2.webp"
-                  width={388}
-                  height={388}
+                 
                   alt="UI4"
-                  className="w-full lg:w-[338px]"
+                  className=" lg:w-[338px] w-[200px]"
 
                 />
               </motion.div>

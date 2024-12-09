@@ -24,7 +24,7 @@ const Section1 = (props: Props) => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
-      className="text-center w-full lg:w-screen h-screen overflow-hidden lg:px-[80px] px-2 relative flex flex-col justify-between"
+      className="text-center h-screen overflow-hidden lg:px-[80px] px-2 relative flex flex-col justify-between"
     >
       <div className="lg:w-[744px] w-full m-auto flex flex-col gap-8 lg:px-20  px-5 pt-[102px] z-10">
         <motion.div

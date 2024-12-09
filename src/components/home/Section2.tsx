@@ -59,7 +59,7 @@ const Section2 = (props: Props) => {
         backgroundPosition: "center",
         backgroundSize: "cover",
       }}
-      className="relative l overflow-hidden py-5 bg-white px-2  w-screen  "
+      className="relative l overflow-hidden py-5 bg-white px-2  "
     >
       {/* Overlay div */}
       <div className="absolute inset-0 bg-black opacity-95" />

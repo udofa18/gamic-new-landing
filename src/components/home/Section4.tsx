@@ -7,7 +7,7 @@ type Props = {};
 
 const Section4 = (props: Props) => {
   return (
-    <div className="m-auto items-center lg:p-20 p-5 flex flex-col gap-8 bg-[#F6F8FA] text-black w-screen">
+    <div className="m-auto items-center lg:p-20 flex flex-col gap-8 bg-[#F6F8FA] text-black ">
       <div className="flex px-2 gap-2 border rounded-full border-[#1671D94D] m-auto text-[#1671D9] bg-[#1671D90D] w-auto text-[14px] items-center">
         <Image src="/icons/wallet.png" width={18} height={14} alt="user-icon" />
         <p>Web3 Wallet</p>
@@ -39,7 +39,7 @@ const Section4 = (props: Props) => {
               width={297}
               height={340}
               alt="UI1"
-              className="lg:w-[297px] w-full"
+              className="lg:w-[297px] w-[200px]"
             />
           </div>
         </div>
