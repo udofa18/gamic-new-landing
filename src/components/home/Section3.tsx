@@ -49,7 +49,7 @@ const Section3 = (props: Props) => {
       </motion.div>
 
       {/* Animated Flex Sections */}
-      <div className="flex lg:flex-row flex-col gap-4 lg:p-10 p-2 w-full overflow-hidden items-center justify-center" >
+      <div className="flex lg:flex-row flex-col gap-4 lg:p-10 p-2 w-full overflow-hidden items-center justify-center lg:h-[544px] ">
         <motion.div
           className="bg-[#FBE2B7] lg:w-[521px] w-full rounded-2xl lg:p-10 p-4 overflow-clip"
           initial="hiddenLeft"
@@ -61,39 +61,44 @@ const Section3 = (props: Props) => {
           <p className="text-[24px] text-[#181818] lg:w-[347px] w-full  font-[Avenir-Medium]">
             Discover communities or create your own.
           </p>
-          <div className="py-10 lg:w-[478px] w-full relative">
-            <ul className="flex gap-2 text-center text-[12px] overflow-hidden lg:w-[878px] w-full ">
+          <div className="py-10 lg:w-[478px] w-fit relative">
+            <ul className="flex  gap-2 text-center text-[12px] overflow-hidden lg:w-[1000px] w-fit ">
               <li className="bg-[#181818] text-white rounded-lg p-2 w-[96px]">
                 All spaces
               </li>
-              {["Music", "Gaming", "Videos", "Work", "Studies"].map(
-                (category, index) => (
-                  <li
-                    key={index}
-                    className="bg-[#F7D394] border border-[#F7C164] rounded-lg p-2 w-[96px] text-black"
-                  >
-                    {category}
-                  </li>
-                )
-              )}
+              {[
+                { name: "Music", img: "/icons/music.svg" },
+                { name: "Gaming", img: "/icons/game.svg" },
+                { name: "Videos", img: "/icons/tv.svg" },
+                { name: "Work", img: "/icons/case.svg" },
+                { name: "Studies", img: "/icons/books.svg" },
+              ].map((category, index) => (
+                <li
+                  key={index}
+                  className="bg-[#F7D394] border border-[#F7C164] rounded-lg p-2 lg:w-[96px] w-fit text-black flex items-center"
+                >
+                  <img
+                    src={category.img} // Use the specific image for each category
+                    alt={category.name} // Use the category name for the alt attribute
+                    className="w-6 h-6 mr-2" // Adjust size and margin as needed
+                  />
+                  {category.name}
+                </li>
+              ))}
             </ul>
           </div>
-          <img
-            src="/ui/community.webp"
-            alt="UI1"
-            className="w-full lg:w-[441px]"
-          />
+          <img src="/ui/comm1.svg" alt="UI1" className="w-full lg:w-[441px]" />
         </motion.div>
 
         <motion.div
-          className="w-full lg:w-[763px] p-10 bg-[#DDD7F1] rounded-2xl pt-10 flex items-center justify-center overflow-hidden"
+          className="w-full lg:w-[763px] p-10 bg-[#DDD7F1] rounded-2xl pt-10 flex items-center justify-center overflow-hidden  lg:h-[544px] pb-0"
           initial="hidden"
           whileInView="visible"
           variants={containerVariants}
           transition={{ duration: 0.3 }}
           viewport={{ once: false, amount: 0.3 }}
         >
-          <div className="mb-[-40px]  overflow-hidden">
+          <div className=" overflow-hidden">
             <motion.div
               initial="hiddenDown"
               whileInView="visible"
@@ -102,8 +107,7 @@ const Section3 = (props: Props) => {
               viewport={{ once: false, amount: 0.3 }}
             >
               <img
-                src="/ui/community2.webp"
-              
+                src="/ui/community2.svg"
                 alt="UI2"
                 className="lg:w-[543px] w-full"
               />
@@ -113,7 +117,7 @@ const Section3 = (props: Props) => {
       </div>
 
       {/* Additional Flex Sections */}
-      <div className="flex gap-4 w-full lg:flex-row flex-col justify-center w-ful overflow-hidden">
+      <div className="flex gap-4 w-full lg:flex-row flex-col justify-center w-ful overflow-hidden  lg:h-[544px] h-full ">
         <motion.div
           className="w-full lg:w-[736px] bg-[#EEF1D7] rounded-2xl pt-10 flex items-center justify-center overflow-hidden lg:p-10 p-2"
           initial="hiddenLeft"
@@ -131,7 +135,7 @@ const Section3 = (props: Props) => {
               viewport={{ once: false, amount: 0.3 }}
             >
               <Image
-                src="/ui/airdrop.webp"
+                src="/ui/airdrop.svg"
                 width={450}
                 height={605}
                 alt="UI3"
@@ -141,20 +145,20 @@ const Section3 = (props: Props) => {
 
             <div className="flex flex-col justify-between ">
               <p className="text-2xl font-[Avenir-Medium]">
-              Effortlessly claim or airdrop tokens to your network.               </p>
+                Effortlessly claim or airdrop tokens to your network.{" "}
+              </p>
               <motion.div
                 initial="hidden"
                 whileInView="visible"
                 variants={containerVariants}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: false, amount: 0.3 }}
+                className="m-auto"
               >
                 <img
-                  src="/ui/airdrop1.2.webp"
-                 
+                  src="/ui/airdrop1.svg"
                   alt="UI4"
-                  className=" lg:w-[338px] w-[200px]"
-
+                  className=" lg:w-[338px] w-[200px] "
                 />
               </motion.div>
             </div>
@@ -170,14 +174,20 @@ const Section3 = (props: Props) => {
           viewport={{ once: false, amount: 0.3 }}
         >
           <div className="mt-[-10px]">
-            <img src="/ui/airdrop2.webp" width={356} height={538} alt="UI5" className="lg:w-[356px] w-full"/>
+            <img
+              src="/ui/airdrop2.svg"
+              width={356}
+              height={538}
+              alt="UI5"
+              className="lg:w-[356px] w-full"
+            />
           </div>
           <p className="lg:text-2xl text-xl font-[Avenir-Medium] text-center py-6">
             Share and receive digital assets seamlessly within your communities.
           </p>
         </motion.div>
       </div>
-<motion.div
+      <motion.div
         className="lg:w-[1280px] w-full overflow-hidden"
         initial="hidden"
         whileInView="visible"
@@ -207,11 +217,16 @@ const Section3 = (props: Props) => {
                 Learn about community management
               </Button>
             </div>
-            <Image src="/ui/space.webp" width={1178} height={609} alt="UI6"  className="w-full lg:w-[1178px] hidden lg:block"
+            <Image
+              src="/ui/man.svg"
+              width={1178}
+              height={609}
+              alt="UI6"
+              className="w-full lg:w-[1178px] hidden lg:block"
             />
           </div>
         </div>
-      </motion.div> 
+      </motion.div>
     </div>
   );
 };

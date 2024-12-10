@@ -37,7 +37,7 @@ import { FaLinkedin } from "react-icons/fa";const Footer = () => {
       </div>
 
       <div className="py-20 lg:text-[20px]  flex justify-between lg:flex-row flex-col">
-        <div className="">
+        <div className="py-4">
           <Image src="/brand/logo2.webp" width={116} height={32} alt="UI1" />
         </div>
 

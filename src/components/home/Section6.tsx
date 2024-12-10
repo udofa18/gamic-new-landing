@@ -34,13 +34,13 @@ const Section6 = (props: Props) => {
             </Button>
           </span>
           <div className="mb-[-40px]  gap-4 bg-[#FBDFD2] p-20 flex items-center justify-center">
-            <img src="/ui/GGG.webp" width={389} height={322} alt="UI1" />
+            <img src="/ui/GGG.svg" width={389} height={322} alt="UI1" />
           </div>
         </div>
 
         <div className="w-full lg:w-[521px] bg-[#DDD7F1] rounded-2xl  flex flex-col items-center  justify-center overflow-hidden">
           <div className="">
-            <Image src="/ui/token.webp" width={356} height={538} alt="UI1" />
+            <Image src="/ui/token.svg" width={356} height={538} alt="UI1" />
           </div>
         </div>
       </div>

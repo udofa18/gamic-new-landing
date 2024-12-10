@@ -8,7 +8,7 @@ const Section7 = () => {
         Built for You.</p>
 
         <div className=" gap-4 lg:p-20 p-5 flex items-center justify-center">
-            <Image src="/ui/investors.png" width={900} height={117} alt="UI1" />
+            <Image src="/ui/investors.svg" width={900} height={117} alt="UI1" />
           </div>
     </div>
   );

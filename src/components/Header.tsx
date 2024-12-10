@@ -22,7 +22,7 @@ const Header = () => {
 
 
       <div className=" ">
-        <Image src="/Brand/logo.png" width={110} height={32} alt="logo"></Image>
+        <Image src="/Brand/logo.svg" width={110} height={32} alt="logo"></Image>
       </div>
 
 
