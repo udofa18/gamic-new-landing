@@ -104,7 +104,7 @@ const Section5 = (props: Props) => {
 
         </div>
 
-        <div className="w-full lg:w-[521px] lg:h-[552px] h-full lg:p-10 p-4 pb-0 bg-[#EEF1D7] rounded-2xl  flex flex-col items-center  justify-center overflow-hidden">
+        <div className="w-full lg:w-[521px] lg:h-[552px] h-full lg:p-10 lg:pb-0 p-4  bg-[#EEF1D7] rounded-2xl  flex flex-col items-center  justify-center overflow-hidden">
         <motion.div
        initial="hiddenDown"
        whileInView="visible"
@@ -114,7 +114,7 @@ const Section5 = (props: Props) => {
           <p className="text-2xl font-[Avenir-Medium] text-center py-6">
           Create and manage groups for collaborative discussions.          </p> 
           <div className="">
-            <Image src="/ui/mess4.svg" width={356} height={538} alt="UI1" />
+            <Image src="/ui/mess4.svg" width={356} height={538} alt="UI1" className="m-auto" />
           </div>
           </motion.div>
 

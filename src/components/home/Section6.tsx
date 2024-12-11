@@ -59,7 +59,7 @@ const Section6 = (props: Props) => {
         variants={containerVariants}
         transition={{ duration: 0.3 }}
         viewport={{ once: false, amount: 0.3 }}>
-            <img src="/ui/GGG.svg" width={389} height={322} alt="UI1" />
+            <img src="/ui/GGG.svg" width={389} height={322} alt="UI1" className="m-auto" />
         
         </motion.div>
 
@@ -75,7 +75,7 @@ const Section6 = (props: Props) => {
         transition={{ duration: 0.3 }}
         viewport={{ once: false, amount: 0.3 }}>
           <div className="">
-            <Image src="/ui/token.svg" width={356} height={538} alt="UI1" />
+            <Image src="/ui/token.svg" width={356} height={538} alt="UI1"  className="m-auto"/>
           </div>
           </motion.div>
 

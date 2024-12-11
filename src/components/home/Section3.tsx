@@ -167,20 +167,28 @@ const Section3 = (props: Props) => {
 
         <motion.div
           className="w-full lg:w-[521px] bg-[#FBDFD2] rounded-2xl flex flex-col items-center justify-center overflow-hidden"
-          initial="hidden"
+          initial="hiddenLeft"
           whileInView="visible"
           variants={containerVariants}
           transition={{ duration: 0.3 }}
           viewport={{ once: false, amount: 0.3 }}
         >
           <div className="mt-[-10px]">
-            <img
-              src="/ui/airdrop2.svg"
-              width={356}
-              height={538}
-              alt="UI5"
-              className="lg:w-[356px] w-full"
-            />
+            <motion.div
+              initial="hiddenDown"
+              whileInView="visible"
+              variants={containerVariants}
+              transition={{ duration: 0.3 }}
+              viewport={{ once: false, amount: 0.3 }}
+            >
+              <img
+                src="/ui/airdrop2.svg"
+                width={356}
+                height={538}
+                alt="UI5"
+                className="lg:w-[356px] w-full m-auto"
+              />
+            </motion.div>
           </div>
           <p className="lg:text-2xl text-xl font-[Avenir-Medium] text-center py-6">
             Share and receive digital assets seamlessly within your communities.
@@ -217,13 +225,22 @@ const Section3 = (props: Props) => {
                 Learn about community management
               </Button>
             </div>
+            <motion.div
+              initial="hiddenUp"
+              whileInView="visible"
+              variants={containerVariants}
+              transition={{ duration: 0.3 }}
+              viewport={{ once: false, amount: 0.3 }}
+            >
             <Image
               src="/ui/man.svg"
               width={1178}
               height={609}
               alt="UI6"
-              className="w-full lg:w-[1178px] hidden lg:block"
+              className="w-full lg:w-[1178px] hidden lg:block m-auto"
             />
+                  </motion.div>
+
           </div>
         </div>
       </motion.div>
