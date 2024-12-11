@@ -9,7 +9,7 @@ import Section7 from "@/components/home/Section7";
 
 const Homepage = () => {
   return (
-    <div className="w-screen  overflow-hidden">
+    <div className="w-screen  overflow-hidden ">
       <Section1 />
       <Section2 />
       <Section3 />
