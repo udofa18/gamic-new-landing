@@ -100,7 +100,18 @@ const Section1 = (props: Props) => {
 />
       </motion.div>
 
-      <div>
+      <div >
+      <motion.div
+        initial={{ scale: 0.1, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{
+          type: "spring",
+          stiffness: 260,
+          damping: 20,
+          duration: 1,
+        }}
+        viewport={{ once: false, amount: 0.5 }} // Animation replays when in view
+      >
         <span className="absolute lg:top-[210px] top-[20px] left-[84px]">
 <Image src="/ui/aux1.png" width={275} height={44} alt="aux1" />
         </span>
@@ -129,6 +140,8 @@ const Section1 = (props: Props) => {
         <span className="absolute lg:top-[520px] lg:right-[350px] top-[490px] right-[20px] ">
 <Image src="/ui/aux10.png" width={72} height={72} alt="aux10" />
         </span>
+        </motion.div>
+
       </div>
     </div>
   );

@@ -226,7 +226,7 @@ const Section3 = (props: Props) => {
               </Button>
             </div>
             <motion.div
-              initial="hiddenUp"
+              initial="hiddenLeft"
               whileInView="visible"
               variants={containerVariants}
               transition={{ duration: 0.3 }}
