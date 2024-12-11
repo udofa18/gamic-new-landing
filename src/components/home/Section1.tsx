@@ -59,7 +59,7 @@ const Section1 = (props: Props) => {
             transition={{ duration: 0.3 }}
             viewport={{ once: false, amount: 0.3 }}
           >
-<Button className="bg-white inner-shadow2 text-black p-6 border-none ">
+<Button className="bg-white inner-shadow2 text-black p-6 border-none  w-full">
   <Image src="/icons/desk.png" alt="Launch Gamic web" width={32} height={32} /> Launch Gamic
   web
 </Button>
@@ -101,17 +101,17 @@ const Section1 = (props: Props) => {
       </motion.div>
 
       <div>
-        <span className="absolute lg:top-[210px] top-[50px] left-[84px]">
+        <span className="absolute lg:top-[210px] top-[20px] left-[84px]">
 <Image src="/ui/aux1.png" width={275} height={44} alt="aux1" />
         </span>
 
-        <span className="absolute lg:top-[535px] top-[420px] lg:left-[84px] left-[30px]">
+        <span className="absolute lg:top-[535px] top-[450px] lg:left-[84px] left-[30px]">
 <Image src="/ui/aux2.png" width={72} height={72} alt="aux2" />
         </span>
         <span className="absolute lg:top-[110px] top-[170px]  left-[30px] lg:left-[538px]">
 <Image src="/ui/aux3.png" width={66} height={66} alt="aux3" />
         </span>
-        <span className="absolute top-[169.61px] right-[400px]">
+        <span className="absolute lg:top-[169.61px] bottom-[200px] lg:right-[400px] right-[100px]">
 <Image src="/ui/aux4.png" width={88} height={88} alt="aux4" />
         </span>
         <span className="absolute bottom-[200.61px] left-[500.71px]  ">
@@ -123,10 +123,10 @@ const Section1 = (props: Props) => {
         <span className="absolute top-[250px] right-[84px] lg:block hidden">
 <Image src="/ui/aux8.png" width={280} height={280} alt="aux8" />
         </span>
-        <span className="absolute top-[360px] right-[85px] lg:block hidden">
+        <span className="absolute lg:top-[360px] bottom-[150px]  lg:right-[85px] right-[200px] ">
 <Image src="/ui/aux9.png" width={72} height={72} alt="aux9" />
         </span>
-        <span className="absolute lg:top-[520px] lg:right-[350px] top-[460px] right-[20px] ">
+        <span className="absolute lg:top-[520px] lg:right-[350px] top-[490px] right-[20px] ">
 <Image src="/ui/aux10.png" width={72} height={72} alt="aux10" />
         </span>
       </div>
