@@ -17,7 +17,7 @@ const Section3 = (props: Props) => {
   };
 
   return (
-    <div className="m-auto items-center lg:p-20 p-2 flex flex-col gap-8 bg-white text-black overflow-hidden">
+    <div className="m-auto items-center lg:p-20 p-2  py-20  flex flex-col gap-8 bg-white text-black overflow-hidden">
       {/* Badge */}
       <motion.div
         className="flex px-2 gap-2 border rounded-full border-[#FC6600] m-auto text-[#FC6600] bg-[#FC6600]/5 w-auto text-[14px] items-center"
@@ -119,14 +119,14 @@ const Section3 = (props: Props) => {
       {/* Additional Flex Sections */}
       <div className="flex gap-4 w-full lg:flex-row flex-col justify-center w-ful overflow-hidden  lg:h-[544px] h-full ">
         <motion.div
-          className="w-full lg:w-[736px] bg-[#EEF1D7] rounded-2xl pt-10 flex items-center justify-center overflow-hidden lg:p-10 p-2"
+          className="w-full lg:w-[736px] bg-[#EEF1D7] rounded-2xl pt-10 flex items-center justify-center overflow-hidden lg:p-10 p-5"
           initial="hiddenLeft"
           whileInView="visible"
           variants={containerVariants}
           transition={{ duration: 0.3 }}
           viewport={{ once: false, amount: 0.3 }}
         >
-          <div className="mb-[-40px] flex lg:flex-row flex-col gap-4">
+          <div className="mb-[-40px] flex lg:flex-row flex-col-reverse  gap-4">
             <motion.div
               initial="hiddenLeft"
               whileInView="visible"
@@ -158,7 +158,7 @@ const Section3 = (props: Props) => {
                 <img
                   src="/ui/airdrop1.svg"
                   alt="UI4"
-                  className=" lg:w-[338px] w-[200px] "
+                  className=" lg:w-[338px] w-[200px] lg:block hidden "
                 />
               </motion.div>
             </div>
@@ -239,6 +239,14 @@ const Section3 = (props: Props) => {
               alt="UI6"
               className="w-full lg:w-[1178px] hidden lg:block m-auto"
             />
+             <img
+              src="/ui/manMob.svg"
+              alt="UI6"
+              className=" w-full  lg:hidden block m-auto"
+            />
+           
+
+
                   </motion.div>
 
           </div>

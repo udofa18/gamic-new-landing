@@ -16,7 +16,7 @@ const Section5 = (props: Props) => {
     hiddenDown: { opacity: 0, y: 100 },
   };
   return (
-    <div className="m-auto items-center lg:p-20 py-5 flex flex-col gap-8 bg-[#F6F8FA] text-black  h-full">
+    <div className="m-auto items-center lg:p-20 py-20 flex flex-col gap-8 bg-[#F6F8FA] text-black  h-full">
       <motion.div className="flex px-2 gap-2 border rounded-full border-[#1671D94D] m-auto text-[#1671D9] bg-[#1671D90D] w-auto text-[14px] items-center"
        initial={{ opacity: 0, scale: 0.8 }}
        animate={{ opacity: 1, scale: 1 }}
@@ -77,8 +77,8 @@ const Section5 = (props: Props) => {
           </div>
         </div>
       </div>
-      <div className="flex lg:flex-row flex-col gap-4 lg:h-[552px] h-full p-2">
-        <div className="w-full lg:w-[736px] lg:h-[552px] h-full bg-[#FBE2B7] rounded-2xl  flex lg:flex-row flex-col  items-center justify-center overflow-hidden lg:p-10 p-4">
+      <div className="flex lg:flex-row flex-col gap-4 lg:h-[552px] h-full p-5">
+        <div className="w-full lg:w-[736px] lg:h-[552px] h-full bg-[#FBE2B7] rounded-2xl  flex lg:flex-row flex-col  items-center justify-center overflow-hidden lg:p-10 p-5">
         <motion.div
             initial="hiddenUp"
             whileInView="visible"
@@ -86,17 +86,18 @@ const Section5 = (props: Props) => {
             transition={{ duration: 0.3 }}
             viewport={{ once: false, amount: 0.3 }}
           >
-          <div className="mb-[-40px] flex lg:flex-row flex-col gap-4">
+          <div className="mb-[-40px] flex lg:flex-row flex-col-reverse gap-4">
             <Image src="/ui/mess3.svg" width={450} height={605} alt="UI1" />
             <div className="flex flex-col gap-10 items-center py-6">
               <p className="text-2xl font-[Avenir-Medium]">
-              Send digital assets directly within your chats.              </p>
+              Send digital assets directly within your chats.         
+                 </p>
               <img
                 src="/ui/woman.svg"
                 width={303}
                 height={329}
                 alt="UI1"
-                className="lg:w-[303px]  w-[150px]"
+                className="lg:w-[303px]  w-[150px] lg:block hidden"
               />
             </div>
           </div>

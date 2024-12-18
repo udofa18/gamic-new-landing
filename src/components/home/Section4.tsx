@@ -17,9 +17,9 @@ const Section4 = (props: Props) => {
   };
 
   return (
-    <div className="m-auto items-center lg:p-20 py-4 flex flex-col gap-8 bg-[#F6F8FA] text-black p-2 ">
+    <div className="m-auto items-center lg:p-20 py-20 flex flex-col gap-8 bg-[#F6F8FA] text-black p-2 ">
       <motion.div
-        className="flex px-2 gap-2 border rounded-full border-[#1671D94D] m-auto text-[#1671D9] bg-[#1671D90D] w-auto text-[14px] items-center"
+        className="flex px-2 gap-2 border rounded-full border-[#9B2A8A0D] m-auto text-[#9B2A8A] bg-[#9B2A8A0D] w-auto text-[14px] items-center"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
@@ -101,7 +101,7 @@ const Section4 = (props: Props) => {
           </motion.div>
         </div>
 
-        <div className="w-full lg:w-[736px] bg-[#DDD7F1]   h-full  rounded-2xl p-4  lg:px-10 px-4 pb-0 flex lg:flex-row flex-col items-center justify-center  lg:h-[544px]  ">
+        <div className="w-full lg:w-[736px] bg-[#DDD7F1]   h-full  rounded-2xl p-4  lg:px-10  pb-0 flex lg:flex-row flex-col-reverse  items-center justify-center  lg:h-[544px]  ">
           <motion.div
             initial="hiddenUp"
             whileInView="visible"
@@ -118,7 +118,7 @@ const Section4 = (props: Props) => {
             </div>
           </motion.div>
 
-          <div className="flex flex-col items-center p-5">
+          <div className="flex flex-col  items-center p-5">
           <motion.div
        initial="hiddenUp"
        whileInView="visible"
@@ -130,11 +130,11 @@ const Section4 = (props: Props) => {
               Effortless swapping with automatic bridging. No more multi-chain
               headaches.
             </p>
-            <div className="p-10">
+            <div className="p-10 hidden lg:block">
               <img
                 src="/ui/chain.svg"
                 alt="UI1"
-                className="lg:w-[270px]  w-full"
+                className="lg:w-[270px]  w-full "
               />
             </div>
             </motion.div>
