@@ -17,11 +17,11 @@ const Section5 = (props: Props) => {
   };
   return (
     <div className="m-auto items-center lg:p-20 py-20 flex flex-col gap-8 bg-[#F6F8FA] text-black  h-full">
-      <motion.div className="flex px-2 gap-2 border rounded-full border-[#1671D94D] m-auto text-[#1671D9] bg-[#1671D90D] w-auto text-[14px] items-center"
+      <motion.div className="flex px-2 gap-2 border rounded-full border-[#9B2A8A4D] m-auto text-[#9B2A8A] bg-[#9B2A8A0D] w-auto text-[14px] items-center"
        initial={{ opacity: 0, scale: 0.8 }}
        animate={{ opacity: 1, scale: 1 }}
        transition={{ duration: 0.5 }}>
-        <Image src="/icons/wallet.png" width={18} height={14} alt="user-icon" />
+        <Image src="/icons/mess.svg" width={18} height={14} alt="user-icon" />
         <p>Direct Messaging</p>
       </motion.div>
       <motion.div
@@ -40,7 +40,7 @@ const Section5 = (props: Props) => {
         <Button className="border-none shadow-lg px-4 my-5">Learn more</Button>
       </motion.div>
 
-      <div className="flex-col flex gap-4 lg:p-10 p-4 pt-0 lg:flex-row">
+      <div className="flex-col flex gap-4 lg:p-5 p-4 pt-0 lg:flex-row">
         <div className="bg-[#DDD7F1] lg:w-[521px] w-full lg:h-[543px] h-full rounded-2xl p-10 pt-0 overflow-clip ">
         <motion.div
             initial="hiddenDown"

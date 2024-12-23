@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import bg from "/public/bg/dark-bg.webp";
 import { Button } from "antd";
@@ -7,7 +8,21 @@ import { FaYoutube } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaTelegram } from "react-icons/fa";
+import  { useState } from 'react';
+import Modal from '../components/home/Modal';
+
 import { FaLinkedin } from "react-icons/fa";const Footer = () => {
+
+   const [isModalOpen, setIsModalOpen] = useState(false);
+  
+    const handleOpenModal = () => {
+        setIsModalOpen(true);
+    };
+  
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
+    };
+  
   return (
     <div
       style={{
@@ -28,24 +43,24 @@ import { FaLinkedin } from "react-icons/fa";const Footer = () => {
 
         <span className="flex m-auto gap-6 lg:flex-row flex-col ">
           <Button className="bg-white  inner-shadow2 text-black p-6 border-none ">
-            <img src="/icons/desk.png" /> Launch Gamic web
+            <img src="/icons/desk.svg" /> Launch Gamic web
           </Button>
-          <Button className="bg-[#FB6320] shadow-inner  inner-shadow text-white p-6 border-none hover:bg-[#FB6320]">
-            <img src="/icons/mob.png" /> Download Gamic Mobile{" "}
+          <Button className="bg-[#FB6320] active:bg-transparent shadow-inner  inner-shadow text-white p-6 border-none hover:bg-[#FB6320]" onClick={handleOpenModal}>
+            <img src="/icons/mob.svg" /> Download Gamic Mobile{" "}
           </Button>
         </span>
       </div>
 
-      <div className="py-20 lg:text-[20px]  flex justify-between lg:flex-row flex-col">
-        <div className="py-4">
+      <div className="py-20 text-[14px] gap-20 flex justify-between lg:flex-row flex-col">
+        <div className="">
           <img src="/Brand/logo2.svg"  alt="UI1 " className="w-[116px]" />
         </div>
 
         <div>
-          <div className="px-4 text-left">
-            <div className="flex justify-between lg:gap-20 flex-wrap gap-8">
+          <div className="px-4 text-left py-20 lg:py-0">
+            <div className="grid justify-between lg:gap-20 lg:grid-cols-6 grid-cols-2 gap-8">
               <div>
-                <h3 className="text-lg font-semibold mb-2">Features</h3>
+                <h3 className=" font-semibold mb-2">Features</h3>
                 <ul className="gap-2 flex flex-col">
                   <li>
                     <a href="#" className="text-gray-400 hover:text-white">
@@ -70,7 +85,7 @@ import { FaLinkedin } from "react-icons/fa";const Footer = () => {
                 </ul>
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2">Gamic</h3>
+                <h3 className=" font-semibold mb-2">Gamic</h3>
                 <ul className="gap-2 flex flex-col">
                   <li>
                     <a href="#" className="text-gray-400 hover:text-white">
@@ -95,7 +110,7 @@ import { FaLinkedin } from "react-icons/fa";const Footer = () => {
                 </ul>
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2">Help</h3>
+                <h3 className=" font-semibold mb-2">Help</h3>
                 <ul className="gap-2 flex flex-col">
                   <li>
                     <a href="#" className="text-gray-400 hover:text-white">
@@ -125,7 +140,7 @@ import { FaLinkedin } from "react-icons/fa";const Footer = () => {
                 </ul>
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2">Collaborate</h3>
+                <h3 className=" font-semibold mb-2">Collaborate</h3>
                 <ul className="gap-2 flex flex-col">
                   <li>
                     <a href="#" className="text-gray-400 hover:text-white">
@@ -145,7 +160,7 @@ import { FaLinkedin } from "react-icons/fa";const Footer = () => {
                 </ul>
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2">Developers</h3>
+                <h3 className=" font-semibold mb-2">Developers</h3>
                 <ul className="gap-2 flex flex-col">
                   <li>
                     <a href="#" className="text-gray-400 hover:text-white">
@@ -165,7 +180,7 @@ import { FaLinkedin } from "react-icons/fa";const Footer = () => {
                 </ul>
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2">GNG</h3>
+                <h3 className=" font-semibold mb-2">GNG</h3>
                 <ul className="gap-2 flex flex-col">
                   <li>
                     <a href="#" className="text-gray-400 hover:text-white">
@@ -198,7 +213,7 @@ import { FaLinkedin } from "react-icons/fa";const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-left flex flex-wrap text-[20px] gap-4 text-[#9A9A9A] justify-between py-10">
+      <div className="text-left flex flex-wrap text-[14px] gap-4 text-[#9A9A9A] justify-between py-10">
         <div className="flex flex-wrap gap-4">
           <p> © Gamic HQ 2024</p>
           <ul className="flex gap-4">
@@ -232,6 +247,8 @@ import { FaLinkedin } from "react-icons/fa";const Footer = () => {
           </ul>
         </div>
       </div>
+      <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
+
     </div>
   );
 };

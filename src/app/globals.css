@@ -37,3 +37,8 @@ body {
 .anticon {
   color: white ;
 }
+
+:where(.css-dev-only-do-not-override-1wwf28x).ant-btn-variant-outlined:not(:disabled):not(.ant-btn-disabled):hover, :where(.css-dev-only-do-not-override-1wwf28x).ant-btn-variant-dashed:not(:disabled):not(.ant-btn-disabled):hover{
+  color: white;
+  background: #181818;
+}

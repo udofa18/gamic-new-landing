@@ -24,7 +24,7 @@ const Section6 = (props: Props) => {
            animate={{ opacity: 1, scale: 1 }}
            transition={{ duration: 0.5 }}>
             <Image
-              src="/icons/wallet.png"
+              src="/icons/earn.svg"
               width={18}
               height={14}
               alt="user-icon"

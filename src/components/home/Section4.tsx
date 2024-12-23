@@ -19,7 +19,7 @@ const Section4 = (props: Props) => {
   return (
     <div className="m-auto items-center lg:p-20 py-20 flex flex-col gap-8 bg-[#F6F8FA] text-black p-2 ">
       <motion.div
-        className="flex px-2 gap-2 border rounded-full border-[#9B2A8A0D] m-auto text-[#9B2A8A] bg-[#9B2A8A0D] w-auto text-[14px] items-center"
+        className="flex px-2 gap-2 border rounded-full border-[#1671D90D] m-auto text-[#1671D9] bg-[#1671D90D] w-auto text-[14px] items-center"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
@@ -35,18 +35,17 @@ const Section4 = (props: Props) => {
         viewport={{ once: false, amount: 0.2 }}
       >
         <h1 className="font-[Avenir-Heavy] lg:text-[40px] text-[30px]  text-center pb-5">
-          Multiple chains are the way of the future.
+        Multiple Chains. Infinite Possibilities.
         </h1>
         <p className="lg:text-[20px] text-[18px] text-[#666666]">
-          Securely manage, trade, and explore your assets across multiple
-          blockchain networks.
+        Securely manage, trade, and explore your assets across multiple blockchain networks all in one place. With Gamic, navigating the multi-chain universe is seamless and empowering.
         </p>
 
         <Button className="border-none shadow-lg px-4 my-5">Learn more</Button>
       </motion.div>
 
-      <div className="flex lg:flex-row flex-col gap-4 lg:p-10 p-2 w-full  items-center justify-center   ">
-        <div className="bg-[#EEF1D7] lg:w-[736px] w-full rounded-2xl p-10 overflow-clip pb-0  lg:h-[544px] ">
+      <div className="flex lg:flex-row flex-col gap-4 lg:p-5 p-2 w-full  items-center justify-center   ">
+        <div className="bg-[#EEF1D7] lg:w-[736px] w-full rounded-2xl pt-10 overflow-clip pb-0  lg:h-[544px] ">
           <motion.div
             initial="hiddenDown"
             whileInView="visible"
@@ -57,7 +56,7 @@ const Section4 = (props: Props) => {
             <img
               src="/ui/wallet.svg"
               alt="UI1"
-              className="m-auto  lg:w-[585px] lg:h-[640] h-full w-full"
+              className="m-auto mb-0  lg:w-[585px] lg:h-[640] h-full w-full"
             />
           </motion.div>
         </div>
@@ -84,7 +83,7 @@ const Section4 = (props: Props) => {
           </motion.div>
         </div>
       </div>
-      <div className="flex gap-4 p-2 lg:flex-row flex-col lg:h-[552px] h-full justify-center w-full m-auto">
+      <div className="flex gap-4 p-2 lg:p-5 lg:flex-row flex-col lg:h-[552px] h-full justify-center w-full m-auto">
         <div className="bg-[#FBDFD2] lg:w-[521px] w-full rounded-2xl p-10 h-full overflow-hidden  pb-0 flex flex-col items-center  lg:h-[544px] ">
           <motion.div
             initial="hiddenUp"

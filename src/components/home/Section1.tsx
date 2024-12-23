@@ -63,7 +63,7 @@ const Section1 = (props: Props) => {
         </p>
         </motion.div>
 
-        <span className="flex flex-col m-auto gap-6 lg:flex-row w-full ">
+        <span className="flex flex-col m-auto gap-6 lg:flex-row w-full justify-center ">
           <motion.div
             initial="hiddenLeft"
             whileInView="visible"
@@ -72,7 +72,7 @@ const Section1 = (props: Props) => {
             viewport={{ once: false, amount: 0.3 }}
           >
 <Button className="bg-white inner-shadow2 text-black p-6 border-none  w-full">
-  <img src="/icons/desk.png" alt="Launch Gamic web" className="lg:w-[32px] w-full]" /> Launch Gamic
+  <img src="/icons/desk.svg" alt="Launch Gamic web" className="lg:w-[32px] w-full]" /> Launch Gamic
   web
 </Button>
           </motion.div>
@@ -85,7 +85,7 @@ const Section1 = (props: Props) => {
           >
 <Button className="bg-[#FB6320] shadow-inner inner-shadow text-white p-6 border-none hover:bg-[#FB6320] w-full" onClick={handleOpenModal}
 >
-  <img src="/icons/mob.png" alt="Download Gamic Mobile" className="lg:w-[32px] w-full]"  /> Download
+  <img src="/icons/mob.svg" alt="Download Gamic Mobile" className="lg:w-[32px] w-full]"  /> Download
   Gamic Mobile
 </Button>
           </motion.div>

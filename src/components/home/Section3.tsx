@@ -31,25 +31,23 @@ const Section3 = (props: Props) => {
 
       {/* Text Section */}
       <motion.div
-        className="lg:w-[485px] text-center w-full "
+        className="lg:w-[495px] text-center w-full "
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
         viewport={{ once: false, amount: 0.2 }}
       >
         <h1 className="font-[Avenir-Heavy] lg:text-[40px] text-[30px] text-center pb-5">
-          One App for Everything Community and Crypto
-        </h1>
+        One App. Endless Possibilities. Where Community Meets Crypto.
+                </h1>
         <p className="lg:text-[20px] text-[18px] text-[#666666]">
-          Create or join communities—Gamic unites SocialFi, DeFi, GameFi, and AI
-          for a seamless experience tailored to gamers, creators, and digital
-          explorers.
+        We bring SocialFi, DeFi, GameFi, and AI together in one seamless experience—crafted for gamers, creators, and digital explorers like you. Step into a world where your passions thrive.
         </p>
         <Button className="border-none shadow-lg px-4 my-5">Learn more</Button>
       </motion.div>
 
       {/* Animated Flex Sections */}
-      <div className="flex lg:flex-row flex-col gap-4 lg:p-10 p-2 w-full overflow-hidden items-center justify-center lg:h-[544px] ">
+      <div className="flex lg:flex-row flex-col gap-4 lg:p-5 p-2 w-full overflow-hidden items-center justify-center lg:h-[544px] ">
         <motion.div
           className="bg-[#FBE2B7] lg:w-[521px] w-full rounded-2xl lg:p-10 p-4 overflow-clip"
           initial="hiddenLeft"
@@ -117,7 +115,7 @@ const Section3 = (props: Props) => {
       </div>
 
       {/* Additional Flex Sections */}
-      <div className="flex gap-4 w-full lg:flex-row flex-col justify-center w-ful overflow-hidden  lg:h-[544px] h-full ">
+      <div className="flex gap-4 w-full lg:flex-row flex-col lg:p-5 justify-center w-ful overflow-hidden  lg:h-[544px] h-full ">
         <motion.div
           className="w-full lg:w-[736px] bg-[#EEF1D7] rounded-2xl pt-10 flex items-center justify-center overflow-hidden lg:p-10 p-5"
           initial="hiddenLeft"
@@ -196,7 +194,7 @@ const Section3 = (props: Props) => {
         </motion.div>
       </div>
       <motion.div
-        className="lg:w-[1280px] w-full overflow-hidden"
+        className="lg:w-[1280px] w-full overflow-hidden lg:p-5"
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
@@ -213,13 +211,12 @@ const Section3 = (props: Props) => {
           }}
         >
           <div className="bg-[#FC6600]/[50%] lg:px-20 pt-20 flex flex-col gap-5 px-5  overflow-hidden">
-            <div className="lg:w-[485px] w-full text-center flex flex-col m-auto">
+            <div className="lg:w-[495px] w-full text-center flex flex-col m-auto">
               <h1 className="font-[Avenir-Medium] text-[28px] text-center pb-5">
-                Build Your Own Decentralized Community
-              </h1>
+              Build the Community 
+              You’ve Always Imagined.              </h1>
               <p className="text-[20px]">
-                From public hubs to private sanctuaries, create spaces that
-                match your vision.
+              From lively public arenas to intimate private retreats, build spaces that reflect your unique vision. With Gamic, you’re empowered to craft communities where your passions and ideas come to life.
               </p>
               <Button className="border-none shadow-lg px-4 my-5 lg:w-[264px] w-full m-auto">
                 Learn about community management
