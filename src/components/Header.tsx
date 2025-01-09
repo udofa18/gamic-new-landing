@@ -55,8 +55,8 @@ const Header = () => {
             <Link href="#">Faq</Link>
           </li>
           <li>
-            <Link href="#">Blog</Link>
-          </li>
+          <Link href="https://medium.com/@gamicHQ" target="_blank">Blog</Link>
+                    </li>
         </ul>
       </div>
       <Button type="primary" onClick={showDrawer} className="lg:hidden bg-transparent text-white border-none shadow-none text-lg">
@@ -67,7 +67,7 @@ const Header = () => {
           <li>
             <Link href="#">Explore</Link>
           </li>
-          <li>
+          <li onClick={handleOpenModal}>
             <Link href="#">Download</Link>
           </li>
           <li>
@@ -80,7 +80,7 @@ const Header = () => {
             <Link href="#">Faq</Link>
           </li>
           <li>
-            <Link href="#">Blog</Link>
+            <Link href="https://medium.com/@gamicHQ" target="_blank">Blog</Link>
           </li>
         </ul>
       </Drawer>

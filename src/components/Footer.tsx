@@ -80,13 +80,13 @@ const Footer = () => {
       
       </div>
 
-      <div className="py-20 text-[14px] gap-20 flex justify-between lg:flex-row flex-col">
+      <div className="py-20 text-[14px] lg:gap-20 gap-10  flex justify-between lg:flex-row flex-col">
         <div className="">
           <img src="/Brand/logo2.svg"  alt="UI1 " className="w-[116px]" />
         </div>
 
         <div>
-          <div className="px-4 text-left py-20 lg:py-0">
+          <div className="px-4 text-left py-20 lg:py-0 ">
             <div className="grid justify-between lg:gap-20 lg:grid-cols-6 grid-cols-2 gap-8">
               <div>
                 <h3 className=" font-semibold mb-2">Features</h3>
@@ -117,14 +117,14 @@ const Footer = () => {
                 <h3 className=" font-semibold mb-2">Gamic</h3>
                 <ul className="gap-2 flex flex-col">
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white">
+                  <Link href="https://docs.gamic.gg/welcome-to-gamic/roadmap/roadmap" target="_blank"  className="text-gray-400 hover:text-white">
                       Roadmap
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white">
+                  <Link href="https://docs.gamic.gg/welcome-to-gamic/team/core-team" target="_blank" className="text-gray-400 hover:text-white">
                       Team
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <a href="#" className="text-gray-400 hover:text-white">
@@ -182,9 +182,9 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white">
+                  <Link href="https://medium.com/@gamicHQ" target="_blank"  className="text-gray-400 hover:text-white">
                       Blog
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -192,9 +192,9 @@ const Footer = () => {
                 <h3 className=" font-semibold mb-2">Developers</h3>
                 <ul className="gap-2 flex flex-col">
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white">
+                    <Link href="https://docs.gamic.gg/welcome-to-gamic/" target="_blank" className="text-gray-400 hover:text-white">
                       Docs
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <a href="#" className="text-gray-400 hover:text-white">
@@ -227,9 +227,9 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white">
+                  <Link href="https://docs.gamic.gg/welcome-to-gamic/economics/tokenomics-usdgng/governance" target="_blank" className="text-gray-400 hover:text-white">
                       Governance
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <a href="#" className="text-gray-400 hover:text-white">
