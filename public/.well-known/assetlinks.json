@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "app.gamic.guild.gamic_guild_mobile",
+            "sha256_cert_fingerprints": [
+                "93:2B:EB:D4:1F:C8:67:4B:AB:22:80:0F:A7:2C:31:F1:10:75:82:93:01:5A:2E:CE:92:97:66:31:48:F6:ED:D8"
+            ]
+        }
+    }
+]

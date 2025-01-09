@@ -1,0 +1,34 @@
+{
+  "webcredentials": {
+        "apps": [ "X236F6S7H5.app.gamic" ]
+  },
+
+  "appclips": {
+        "apps": [ "X236F6S7H5.app.gamic" ]
+  },
+  "applinks":{
+    "apps":[
+
+    ],
+    "details":[
+      {
+        "appIDs":[
+          "X236F6S7H5.app.gamic"
+        ],
+        "components":[
+          {
+            "/":"/s/*",
+            "comment":"Matches URL with a path /s all space invite"
+          },
+          {
+            "/":"/wc*",
+            "comment":"Matches any URL with a path that starts with /wc."
+          },
+          {
+             "/":"*"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -42,3 +42,26 @@ body {
   color: white;
   background: #181818;
 }
+
+/* Hide the default scrollbar */
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+/* Customize the scroll bar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090000d6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FB6320;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1260a;
+}
