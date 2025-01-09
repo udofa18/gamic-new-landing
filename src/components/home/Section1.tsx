@@ -71,10 +71,10 @@ const Section1 = (props: Props) => {
             transition={{ duration: 0.3 }}
             viewport={{ once: false, amount: 0.3 }}
           >
-<Button className="bg-white inner-shadow2 text-black p-6 border-none  w-full">
+<button className="bg-white inner-shadow2 hover:bg-white/50 text-black p-4 border-none  w-full rounded-md items-center flex gap-4 text-center justify-center">
   <img src="/icons/desk.svg" alt="Launch Gamic web" className="lg:w-[32px] w-full]" /> Launch Gamic
   web
-</Button>
+</button>
           </motion.div>
           <motion.div
             initial="hiddenRight"
@@ -83,11 +83,11 @@ const Section1 = (props: Props) => {
             transition={{ duration: 0.3 }}
             viewport={{ once: false, amount: 0.3 }}
           >
-<Button className="bg-[#FB6320] shadow-inner inner-shadow text-white p-6 border-none hover:bg-[#FB6320] w-full" onClick={handleOpenModal}
+<button className="bg-[#FB6320] shadow-inner inner-shadow text-white p-4 border-none hover:bg-[#FB6320]/50 w-full rounded-md items-center flex gap-4 text-center justify-center" onClick={handleOpenModal}
 >
   <img src="/icons/mob.svg" alt="Download Gamic Mobile" className="lg:w-[32px] w-full]"  /> Download
   Gamic Mobile
-</Button>
+</button>
           </motion.div>
         </span>
       </div>

@@ -6,6 +6,8 @@ import  { useState } from "react";
 import { Button, Drawer } from "antd";
 // import logo from '/Brand/logo.png'
 import { CiMenuFries } from "react-icons/ci";
+import Modal from './home/Modal';
+
 const Header = () => {
   const [open, setOpen] = useState(false);
 
@@ -16,6 +18,15 @@ const Header = () => {
   const onClose = () => {
     setOpen(false);
   };
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
+    const handleOpenModal = () => {
+        setIsModalOpen(true);
+    };
+  
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
+    };
 
   return (
     <div className="h-[64px] lg:px-[80px] px-5 fixed flex justify-between items-center w-full bg-[#181818] z-30">
@@ -31,7 +42,7 @@ const Header = () => {
           <li>
             <Link href="#">Explore</Link>
           </li>
-          <li>
+          <li  onClick={handleOpenModal}>
             <Link href="#">Download</Link>
           </li>
           <li>
@@ -73,6 +84,8 @@ const Header = () => {
           </li>
         </ul>
       </Drawer>
+      <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
+
     </div>
   );
 };

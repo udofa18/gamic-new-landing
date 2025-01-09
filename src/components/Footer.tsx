@@ -10,9 +10,19 @@ import { FaSquareInstagram } from "react-icons/fa6";
 import { FaTelegram } from "react-icons/fa";
 import  { useState } from 'react';
 import Modal from '../components/home/Modal';
+import { motion } from "framer-motion";
 
-import { FaLinkedin } from "react-icons/fa";const Footer = () => {
-
+import { FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
+const Footer = () => {
+  const containerVariants = {
+    hidden: { opacity: 0, x: 100 }, // Starting from the right
+    hiddenLeft: { opacity: 0, x: -100 }, // Starting from the left
+    visible: { opacity: 1, x: 0, y: 0 }, // Animating to the current position
+    hiddenUp: { opacity: 0, y: -100 }, // Starting from above
+    hiddenDown: { opacity: 0, y: 100 }, // Starting from below
+    hiddenRight: { opacity: 0, x: 100 }, // Starting from the right
+  };
    const [isModalOpen, setIsModalOpen] = useState(false);
   
     const handleOpenModal = () => {
@@ -40,15 +50,34 @@ import { FaLinkedin } from "react-icons/fa";const Footer = () => {
           redefining decentralization. Together, we’re creating something
           extraordinary.
         </p>
-
-        <span className="flex m-auto gap-6 lg:flex-row flex-col ">
-          <Button className="bg-white  inner-shadow2 text-black p-6 border-none ">
-            <img src="/icons/desk.svg" /> Launch Gamic web
-          </Button>
-          <Button className="bg-[#FB6320] active:bg-transparent shadow-inner  inner-shadow text-white p-6 border-none hover:bg-[#FB6320]" onClick={handleOpenModal}>
-            <img src="/icons/mob.svg" /> Download Gamic Mobile{" "}
-          </Button>
+        <span className="flex flex-col m-auto gap-6 lg:flex-row w-full justify-center ">
+          <motion.div
+            initial="hiddenLeft"
+            whileInView="visible"
+            variants={containerVariants}
+            transition={{ duration: 0.3 }}
+            viewport={{ once: false, amount: 0.3 }}
+          >
+<button className="bg-white inner-shadow2 hover:bg-white/50 text-black p-4 border-none  w-full rounded-md items-center flex gap-4 text-center justify-center">
+  <img src="/icons/desk.svg" alt="Launch Gamic web" className="lg:w-[32px] w-full]" /> Launch Gamic
+  web
+</button>
+          </motion.div>
+          <motion.div
+            initial="hiddenRight"
+            whileInView="visible"
+            variants={containerVariants}
+            transition={{ duration: 0.3 }}
+            viewport={{ once: false, amount: 0.3 }}
+          >
+<button className="bg-[#FB6320] shadow-inner inner-shadow text-white p-4 border-none hover:bg-[#FB6320]/50 w-full rounded-md items-center flex gap-4 text-center justify-center" onClick={handleOpenModal}
+>
+  <img src="/icons/mob.svg" alt="Download Gamic Mobile" className="lg:w-[32px] w-full]"  /> Download
+  Gamic Mobile
+</button>
+          </motion.div>
         </span>
+      
       </div>
 
       <div className="py-20 text-[14px] gap-20 flex justify-between lg:flex-row flex-col">
@@ -226,23 +255,38 @@ import { FaLinkedin } from "react-icons/fa";const Footer = () => {
         <div>
           <ul className="flex text-white gap-8">
             <li>
-              <BsTwitterX />
-            </li>
-            <li>
-            <FaYoutube />
-            </li>
-            <li>
-            <FaGithub />
-            </li>
-            <li>
-            <FaSquareInstagram />
-            </li>
-            <li>
-            <FaTelegram />
-            </li>
-            <li>
-            <FaLinkedin />
+            <Link href="https://twitter.com/mygamichq" target="_blank">
 
+              <BsTwitterX />
+              </Link>
+            </li>
+            <li>
+            <Link href="https://youtube.com/@gamicHQ" target="_blank">
+
+            <FaYoutube />
+            </Link>
+            </li>
+            <li>
+            <Link href="https://github.com/Artist3-NFT" target="_blank">
+
+            <FaGithub />
+            </Link>
+            </li>
+            <li>
+            <Link href="https://instagram.com/gamichq?igshid=YmMyMTA2M2Y=" target="_blank">
+            <FaSquareInstagram />
+            </Link>
+            </li>
+            <li>
+            <Link href="https://t.me/gamicapp" target="_blank">
+            <FaTelegram />
+            </Link>
+            </li>
+            <li>
+              
+              <Link href="https://www.linkedin.com/company/@gamicHQ" target="_blank">
+            <FaLinkedin />
+              </Link>
             </li>
           </ul>
         </div>
