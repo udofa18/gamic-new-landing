@@ -16,12 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="">
-        <div>
+      <body >
+        <div className="overflow-x-hidden">
           <Header />
-        </div>
+       
         <div>{children}</div>
-        <Footer/>
+        <Footer/> 
+        </div>
       </body>
     </html>
   );

@@ -38,7 +38,7 @@ const Section3 = (props: Props) => {
         viewport={{ once: false, amount: 0.2 }}
       >
         <h1 className="font-[Avenir-Heavy] lg:text-[40px] text-[30px] text-center pb-5">
-        One App. Endless Possibilities. Where Community Meets Crypto.
+        One App. Endless Possibilities.Where Community Meets Crypto.
                 </h1>
         <p className="lg:text-[20px] text-[18px] text-[#666666]">
         We bring SocialFi, DeFi, GameFi, and AI together in one seamless experience—crafted for gamers, creators, and digital explorers like you. Step into a world where your passions thrive.
