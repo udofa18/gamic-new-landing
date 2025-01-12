@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import "hover.css/css/hover-min.css"; // Add this line to import hover.css from node_modules
 
 
+
 export const metadata: Metadata = {
   title: "Gamic - Decentralised Community. Chat, Airdrop & Wallet",
   description: "Gamic is a decentralized community chat application for friends, gamers, creators, and blockchain enthusiasts.",
