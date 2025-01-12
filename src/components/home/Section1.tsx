@@ -3,8 +3,9 @@ import bg from "/public/bg/dark-bg.webp";
 import { Button } from "antd";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import React, { useState } from 'react';
-import Modal from './Modal';
+import React, { useState } from "react";
+import Modal from "./Modal";
+import Link from "next/link";
 
 type Props = {};
 
@@ -21,11 +22,11 @@ const Section1 = (props: Props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleOpenModal = () => {
-      setIsModalOpen(true);
+    setIsModalOpen(true);
   };
 
   const handleCloseModal = () => {
-      setIsModalOpen(false);
+    setIsModalOpen(false);
   };
 
   return (
@@ -57,10 +58,10 @@ const Section1 = (props: Props) => {
           transition={{ duration: 0.5 }}
           viewport={{ once: false, amount: 0.2 }}
         >
-        <p className="lg:text-[24px] text-[16px] text-[#9A9A9A]">
-          {" "}
-          The Future of Decentralized Social Networking
-        </p>
+          <p className="lg:text-[24px] text-[16px] text-[#9A9A9A]">
+            {" "}
+            The Future of Decentralized Social Networking
+          </p>
         </motion.div>
 
         <span className="flex flex-col m-auto gap-6 lg:flex-row w-full justify-center ">
@@ -71,10 +72,16 @@ const Section1 = (props: Props) => {
             transition={{ duration: 0.3 }}
             viewport={{ once: false, amount: 0.3 }}
           >
-<button className="bg-white inner-shadow2 hover:bg-white/50 text-black p-4 border-none  w-full rounded-md items-center flex gap-4 text-center justify-center">
-  <img src="/icons/desk.svg" alt="Launch Gamic web" className="lg:w-[32px] w-full]" /> Launch Gamic
-  web
-</button>
+            <Link href="http//:www.gamic.pro">
+            <button className="bg-white inner-shadow2 hover:bg-white/50 text-black p-4 border-none  w-full rounded-md items-center flex gap-4 text-center justify-center">
+              <img
+                src="/icons/desk.svg"
+                alt="Launch Gamic web"
+                className="lg:w-[32px] w-full]"
+              />{" "}
+              Launch Gamic web
+            </button>
+            </Link>
           </motion.div>
           <motion.div
             initial="hiddenRight"
@@ -83,11 +90,17 @@ const Section1 = (props: Props) => {
             transition={{ duration: 0.3 }}
             viewport={{ once: false, amount: 0.3 }}
           >
-<button className="bg-[#FB6320] shadow-inner inner-shadow text-white p-4 border-none hover:bg-[#FB6320]/50 w-full rounded-md items-center flex gap-4 text-center justify-center" onClick={handleOpenModal}
->
-  <img src="/icons/mob.svg" alt="Download Gamic Mobile" className="lg:w-[32px] w-full]"  /> Download
-  Gamic Mobile
-</button>
+            <button
+              className="bg-[#FB6320] shadow-inner inner-shadow text-white p-4 border-none hover:bg-[#FB6320]/50 w-full rounded-md items-center flex gap-4 text-center justify-center"
+              onClick={handleOpenModal}
+            >
+              <img
+                src="/icons/mob.svg"
+                alt="Download Gamic Mobile"
+                className="lg:w-[32px] w-full]"
+              />{" "}
+              Download Gamic Mobile
+            </button>
           </motion.div>
         </span>
       </div>
@@ -104,66 +117,63 @@ const Section1 = (props: Props) => {
         }}
         viewport={{ once: false, amount: 0.5 }} // Animation replays when in view
       >
-<Image
-  src="/ui/sec1.png"
-  width={1108}
-  height={812}
-  alt="UI1"
-  className="w-[100%] lg:w-[1108px] h-full lg:block hidden"
-/>
-<img
-  src="/ui/sec1Mob.png"
-  alt="UI1"
-  className="w-[100%] lg:w-[1108px] h-full block lg:hidden "
-/>
-
+        <Image
+          src="/ui/sec1.png"
+          width={1108}
+          height={812}
+          alt="UI1"
+          className="w-[100%] lg:w-[1108px] h-full lg:block hidden"
+        />
+        <img
+          src="/ui/sec1Mob.png"
+          alt="UI1"
+          className="w-[100%] lg:w-[1108px] h-full block lg:hidden "
+        />
       </motion.div>
 
-      <div className="hidden lg:block" >
-      <motion.div
-        initial={{ scale: 0.1, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{
-          type: "spring",
-          stiffness: 260,
-          damping: 20,
-          duration: 1,
-        }}
-        viewport={{ once: false, amount: 0.5 }} // Animation replays when in view
-      >
-        <span className="absolute lg:top-[210px] top-[20px] left-[84px]">
-<Image src="/ui/aux1.png" width={241} height={44} alt="aux1" />
-        </span>
+      <div className="hidden lg:block">
+        <motion.div
+          initial={{ scale: 0.1, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+            duration: 1,
+          }}
+          viewport={{ once: false, amount: 0.5 }} // Animation replays when in view
+        >
+          <span className="absolute lg:top-[210px] top-[20px] left-[84px]">
+            <Image src="/ui/aux1.png" width={241} height={44} alt="aux1" />
+          </span>
 
-        <span className="absolute lg:top-[535px] top-[450px] lg:left-[84px] left-[30px]">
-<Image src="/ui/aux2.png" width={72} height={72} alt="aux2" />
-        </span>
-        <span className="absolute lg:top-[110px] top-[170px]  left-[30px] lg:left-[538px]">
-<Image src="/ui/aux3.png" width={58} height={58} alt="aux3" />
-        </span>
-        <span className="absolute lg:top-[169.61px] bottom-[200px] lg:right-[400px] right-[100px]">
-<Image src="/ui/aux4.png" width={72} height={72} alt="aux4" />
-        </span>
-        <span className="absolute bottom-[200.61px] left-[500.71px]  ">
-<Image src="/ui/aux6.png" width={63} height={63} alt="aux6" />
-        </span>
-        <span className="absolute bottom-[200px] right-[450.71px]">
-<Image src="/ui/aux7.png" width={117} height={50} alt="aux7" />
-        </span>
-        <span className="absolute top-[250px] right-[84px] lg:block hidden">
-<Image src="/ui/aux8.png" width={253} height={280} alt="aux8" />
-        </span>
-        <span className="absolute lg:top-[360px] bottom-[150px]  lg:right-[85px] right-[200px] ">
-<Image src="/ui/aux9.png" width={56} height={56} alt="aux9" />
-        </span>
-        <span className="absolute lg:top-[520px] lg:right-[350px] top-[490px] right-[20px] ">
-<Image src="/ui/aux10.png" width={48} height={48} alt="aux10" />
-        </span>
+          <span className="absolute lg:top-[535px] top-[450px] lg:left-[84px] left-[30px]">
+            <Image src="/ui/aux2.png" width={72} height={72} alt="aux2" />
+          </span>
+          <span className="absolute lg:top-[110px] top-[170px]  left-[30px] lg:left-[538px]">
+            <Image src="/ui/aux3.png" width={58} height={58} alt="aux3" />
+          </span>
+          <span className="absolute lg:top-[169.61px] bottom-[200px] lg:right-[400px] right-[100px]">
+            <Image src="/ui/aux4.png" width={72} height={72} alt="aux4" />
+          </span>
+          <span className="absolute bottom-[200.61px] left-[500.71px]  ">
+            <Image src="/ui/aux6.png" width={63} height={63} alt="aux6" />
+          </span>
+          <span className="absolute bottom-[200px] right-[450.71px]">
+            <Image src="/ui/aux7.png" width={117} height={50} alt="aux7" />
+          </span>
+          <span className="absolute top-[250px] right-[84px] lg:block hidden">
+            <Image src="/ui/aux8.png" width={253} height={280} alt="aux8" />
+          </span>
+          <span className="absolute lg:top-[360px] bottom-[150px]  lg:right-[85px] right-[200px] ">
+            <Image src="/ui/aux9.png" width={56} height={56} alt="aux9" />
+          </span>
+          <span className="absolute lg:top-[520px] lg:right-[350px] top-[490px] right-[20px] ">
+            <Image src="/ui/aux10.png" width={48} height={48} alt="aux10" />
+          </span>
         </motion.div>
-
       </div>
       <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
-
     </div>
   );
 };

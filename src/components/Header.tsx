@@ -33,7 +33,9 @@ const Header = () => {
 
 
       <div className=" ">
+        <Link href="/" className="cursor-pointer">
         <Image src="/Brand/logo.svg" width={110} height={32} alt="logo"></Image>
+        </Link>
       </div>
 
 
