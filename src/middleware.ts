@@ -3,11 +3,47 @@ import { NextRequest, NextResponse } from 'next/server';
 export default function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  if (pathname === '/' || pathname.startsWith('/api')) {
+  // Static files and assets (images, etc.) will be served without redirect
+  if (
+    pathname.startsWith('/_next') || // Next.js static files (bundles, etc.)
+    pathname.startsWith('/public') || // Public folder assets (including images)
+    pathname.startsWith('/favicon.ico') || // Favicon
+    pathname.endsWith('.jpg') || // Allow .jpg images
+    pathname.endsWith('.jpeg') || // Allow .jpeg images
+    pathname.endsWith('.png') || // Allow .png images
+    pathname.endsWith('.gif') || // Allow .gif images
+    pathname.endsWith('.svg') || // Allow .svg images
+    pathname.endsWith('.webp') || // Allow .webp images
+    pathname === '/' // Root path
+  ) {
     return NextResponse.next();
   }
 
-  // Redirect to dev.gamic.pro with the relative path appended
-  const redirectUrl = `https://dev.gamic.pro${pathname}`;
-  return NextResponse.redirect(redirectUrl, 302); // Temporary redirect
+  // Define the paths that should be redirected
+  const pathsToRedirect = [
+    '/login',
+    '/privacy',
+    '/terms',
+    '/wc',
+  ];
+
+  // Regex for dynamic paths
+  const dynamicPathsRegex = [
+    /^\/s\/[^/]+\/u\/[^/]+$/,  // /s/:name/u/:inviterId
+    /^\/g\/[^/]+$/,            // /g/:name
+    /^\/s\/[^/]+$/,            // /s/:bsId
+  ];
+
+  // Check if the current pathname matches any of the redirect paths or dynamic paths
+  const isStaticPathMatch = pathsToRedirect.includes(pathname);
+  const isDynamicMatch = dynamicPathsRegex.some((regex) => regex.test(pathname));
+
+  // If it matches a static or dynamic path, redirect to dev.gamic.pro
+  if (isStaticPathMatch || isDynamicMatch) {
+    const redirectUrl = `https://dev.gamic.pro${pathname}`;
+    return NextResponse.redirect(redirectUrl, 302); // Temporary redirect
+  }
+
+  // If not a path to be redirected, proceed with normal response
+  return NextResponse.next();
 }
