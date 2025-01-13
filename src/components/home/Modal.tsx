@@ -2,6 +2,7 @@ import React from 'react';
 import Image from "next/image";
 import { AiOutlineClose } from "react-icons/ai";
 import Link from 'next/link';
+import Head from 'next/head';
 
 interface ModalProps {
     isOpen: boolean;
@@ -13,6 +14,11 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
 
     return (
         <div className="fixed inset-0 flex justify-center items-center  z-10 " >
+                  <Head>
+        <link rel="preload" as="image" href="/icons/play.svg" />
+        <link rel="preload" as="image" href="/icons/ios.svg" />
+
+      </Head>
         <div className='absolute inset-1 bg-opacity-50  bg-black  z-20'onClick={onClose}>
             
         </div>
