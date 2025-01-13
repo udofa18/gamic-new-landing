@@ -24,9 +24,9 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
 </div>
                 <h2 className="text-[24px] font-bold mb-4">Download the app today</h2>
                 <div className="flex justify-around">
-                 <Link href="https://apps.apple.com/us/app/gamic-spaces-chat-connect/id1673683070 " target='_blank' >  <button className='hvr-shrink' ><Image src="/icons/ios.svg" width={150} height={50} alt="aux3" />
+                 <Link href="https://apps.apple.com/us/app/gamic-spaces-chat-connect/id1673683070 " target='_blank' >  <button className='hvr-shrink' ><Image src="/icons/ios.svg" width={150} height={50} alt="aux3" loading="eager" />
                     </button></Link>
-                    <Link href=" https://play.google.com/store/apps/details?id=app.gamic.guild.gamic_guild_mobile" target='_blank' >        <button className='hvr-shrink'  ><Image src="/icons/play.svg" width={150} height={50} alt="aux3" />
+                    <Link href=" https://play.google.com/store/apps/details?id=app.gamic.guild.gamic_guild_mobile" target='_blank' >        <button className='hvr-shrink'  ><Image src="/icons/play.svg" width={150} height={50} alt="aux3" loading="eager"  />
                     </button>       </Link>         </div>
             </div>
         </div>

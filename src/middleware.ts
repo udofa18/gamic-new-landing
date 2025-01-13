@@ -42,13 +42,13 @@ export default function middleware(request: NextRequest) {
   // Handle special case for /login with query parameters
   if (pathname.startsWith('/login')) {
     // Redirect any /login paths with query parameters
-    const redirectUrl = `https://gamic.pro${pathname}${request.nextUrl.search}`;
+    const redirectUrl = `https://dev.gamic.pro${pathname}${request.nextUrl.search}`;
     return NextResponse.redirect(redirectUrl, 302); // Temporary redirect
   }
 
   // If it matches a static or dynamic path, redirect to dev.gamic.pro
   if (isStaticPathMatch || isDynamicMatch) {
-    const redirectUrl = `https://gamic.pro${pathname}`;
+    const redirectUrl = `https://dev.gamic.pro${pathname}`;
     return NextResponse.redirect(redirectUrl, 302); // Temporary redirect
   }
 
