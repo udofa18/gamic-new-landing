@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "hover.css/css/hover-min.css"; // Add this line to import hover.css from node_modules
+import Head from 'next/head';
 
 
 
@@ -20,6 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+          <Head>
+        <link rel="preload" as="image" href="/icons/play.svg" />
+        <link rel="preload" as="image" href="/icons/ios.svg" />
+
+      </Head>
       <body >
         <div className="overflow-x-hidden">
           <Header />
