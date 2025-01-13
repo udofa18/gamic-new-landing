@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 export default function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
+  const searchParams = request.nextUrl.searchParams;
 
   // Static files and assets (images, etc.) will be served without redirect
   if (
@@ -19,7 +20,7 @@ export default function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // Define the paths that should be redirected
+  // Define the paths that should be redirected (without query parameters)
   const pathsToRedirect = [
     '/login',
     '/privacy',
@@ -37,6 +38,13 @@ export default function middleware(request: NextRequest) {
   // Check if the current pathname matches any of the redirect paths or dynamic paths
   const isStaticPathMatch = pathsToRedirect.includes(pathname);
   const isDynamicMatch = dynamicPathsRegex.some((regex) => regex.test(pathname));
+
+  // Handle special case for /login with query parameters
+  if (pathname.startsWith('/login')) {
+    // Redirect any /login paths with query parameters
+    const redirectUrl = `https://dev.gamic.pro${pathname}${request.nextUrl.search}`;
+    return NextResponse.redirect(redirectUrl, 302); // Temporary redirect
+  }
 
   // If it matches a static or dynamic path, redirect to dev.gamic.pro
   if (isStaticPathMatch || isDynamicMatch) {
