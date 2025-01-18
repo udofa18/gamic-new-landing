@@ -58,10 +58,14 @@ const Footer = () => {
             transition={{ duration: 0.3 }}
             viewport={{ once: false, amount: 0.3 }}
           >
+            <Link href="https://gamic.pro">
+
 <button className="bg-white inner-shadow2 hover:bg-white/50 text-black p-4 border-none  w-full rounded-md items-center flex gap-4 text-center justify-center">
   <img src="/icons/desk.svg" alt="Launch Gamic web" className="lg:w-[32px] w-full]" /> Launch Gamic
   web
 </button>
+</Link>
+
           </motion.div>
           <motion.div
             initial="hiddenRight"
