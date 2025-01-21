@@ -31,6 +31,7 @@ const Section2 = (props: Props) => {
     "./partners/bull.png",
     "./partners/community.png",
     "./partners/coral.png",
+    "./partners/hacken.png",
   ];
 
   const partners2 = [
