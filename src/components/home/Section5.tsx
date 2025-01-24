@@ -16,7 +16,8 @@ const Section5 = (props: Props) => {
     hiddenDown: { opacity: 0, y: 100 },
   };
   return (
-    <div className="m-auto items-center lg:p-20 py-20 flex flex-col gap-8 bg-[#F6F8FA] text-black  h-full">
+    <div className="m-auto items-center lg:p-20 py-20 flex flex-col gap-8 bg-[#F6F8FA] text-black  h-full"  id="messangers"
+>
       <motion.div className="flex px-2 gap-2 border rounded-full border-[#9B2A8A4D] m-auto text-[#9B2A8A] bg-[#9B2A8A0D] w-auto text-[14px] items-center"
        initial={{ opacity: 0, scale: 0.8 }}
        animate={{ opacity: 1, scale: 1 }}

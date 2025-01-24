@@ -65,3 +65,10 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #a1260a;
 }
+
+:where(.css-dev-only-do-not-override-1htoz2s).ant-collapse>.ant-collapse-item >.ant-collapse-header {
+  color: #FB6320;
+}
+html {
+  scroll-behavior: smooth;
+}

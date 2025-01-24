@@ -17,7 +17,8 @@ const Section3 = (props: Props) => {
   };
 
   return (
-    <div className="m-auto items-center lg:p-20 p-2  py-20  flex flex-col gap-8 bg-white text-black overflow-hidden">
+    <div className="m-auto items-center lg:p-20 p-2  py-20  flex flex-col gap-8 bg-white text-black overflow-hidden"  id="communities"
+>
       {/* Badge */}
       <motion.div
         className="flex px-2 gap-2 border rounded-full border-[#FC6600] m-auto text-[#FC6600] bg-[#FC6600]/5 w-auto text-[14px] items-center"

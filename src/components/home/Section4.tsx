@@ -17,7 +17,8 @@ const Section4 = (props: Props) => {
   };
 
   return (
-    <div className="m-auto items-center lg:p-20 py-20 flex flex-col gap-8 bg-[#F6F8FA] text-black p-2 ">
+    <div className="m-auto items-center lg:p-20 py-20 flex flex-col gap-8 bg-[#F6F8FA] text-black p-2 "  id="wallet"
+>
       <motion.div
         className="flex px-2 gap-2 border rounded-full border-[#1671D90D] m-auto text-[#1671D9] bg-[#1671D90D] w-auto text-[14px] items-center"
         initial={{ opacity: 0, scale: 0.8 }}

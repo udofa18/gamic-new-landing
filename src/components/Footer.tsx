@@ -11,6 +11,7 @@ import { FaTelegram } from "react-icons/fa";
 import  { useState } from 'react';
 import Modal from '../components/home/Modal';
 import { motion } from "framer-motion";
+import { Popover } from 'antd';
 
 import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
@@ -91,29 +92,29 @@ const Footer = () => {
 
         <div>
           <div className="px-4 text-left py-20 lg:py-0 ">
-            <div className="grid justify-between lg:gap-20 lg:grid-cols-6 grid-cols-2 gap-8">
+            <div className="grid justify-between lg:gap-20 lg:grid-cols-5 grid-cols-2 gap-8">
               <div>
                 <h3 className=" font-semibold mb-2">Features</h3>
                 <ul className="gap-2 flex flex-col">
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white">
+                    <Link href="/#communities" className="text-gray-400 hover:text-white">
                       Communities
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white">
+                    <Link href="/#create-space" className="text-gray-400 hover:text-white">
                       Create Space
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white">
+                    <Link href="/#messangers" className="text-gray-400 hover:text-white">
                       Messangers
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white">
+                    <Link href="/#wallet" className="text-gray-400 hover:text-white">
                       Wallet
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -131,18 +132,22 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white">
+                    <Link href="https://docs.gamic.gg/welcome-to-gamic/brand" target="_blank" className="text-gray-400 hover:text-white">
                       Brand
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white">
+                  <Popover placement="right" content="coming soon">
+
+                    <a  className="text-gray-400 hover:text-white">
                       Careers
                     </a>
+                    </Popover>
+
                   </li>
                 </ul>
               </div>
-              <div>
+              {/* <div>
                 <h3 className=" font-semibold mb-2">Help</h3>
                 <ul className="gap-2 flex flex-col">
                   <li>
@@ -171,19 +176,19 @@ const Footer = () => {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
               <div>
                 <h3 className=" font-semibold mb-2">Collaborate</h3>
                 <ul className="gap-2 flex flex-col">
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white">
+                    <Link href="#" className="text-gray-400 hover:text-white">
                       Discuss
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white">
+                    <Link href="#" className="text-gray-400 hover:text-white">
                       Upvote
-                    </a>
+                    </Link>
                   </li>
                   <li>
                   <Link href="https://medium.com/@gamicHQ" target="_blank"  className="text-gray-400 hover:text-white">
@@ -201,14 +206,14 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white">
+                    <Link href="#" className="text-gray-400 hover:text-white">
                       Insights
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white">
+                    <Link href="#" className="text-gray-400 hover:text-white">
                       Specs
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -216,30 +221,30 @@ const Footer = () => {
                 <h3 className=" font-semibold mb-2">GNG</h3>
                 <ul className="gap-2 flex flex-col">
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white">
+                    <Link href="https://docs.gamic.gg/welcome-to-gamic/economics/tokenomics-usdgng" target="_blank" className="text-gray-400 hover:text-white">
                       Token
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white">
+                    <Link href="#" className="text-gray-400 hover:text-white">
                       Release Schedule
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white">
+                    <Link href="https://docs.gamic.gg/welcome-to-gamic" target="_blank" className="text-gray-400 hover:text-white">
                       Whitepaper
-                    </a>
+                    </Link>
                   </li>
                   <li>
                   <Link href="https://docs.gamic.gg/welcome-to-gamic/economics/tokenomics-usdgng/governance" target="_blank" className="text-gray-400 hover:text-white">
                       Governance
                     </Link>
                   </li>
-                  <li>
-                    <a href="#" className="text-gray-400 hover:text-white">
+                  {/* <li>
+                    <Link href="#" className="text-gray-400 hover:text-white">
                       Exchange
-                    </a>
-                  </li>
+                    </Link>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -250,9 +255,14 @@ const Footer = () => {
         <div className="flex flex-wrap gap-4">
           <p> © Gamic HQ 2024</p>
           <ul className="flex gap-4">
-            <li>Terms of use</li>
-            <li>Privacy policy</li>
-            <li>Security</li>
+            {/* <li>Terms of use</li> */}
+            <li>
+            <Link href="policy" >
+
+              Privacy policy
+              </Link>
+              </li>
+            {/* <li>Security</li> */}
           </ul>{" "}
         </div>
 

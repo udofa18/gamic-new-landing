@@ -41,22 +41,18 @@ const Header = () => {
 
       <div className="hidden lg:block">
         <ul className="flex gap-10">
-          <li>
-            <Link href="#">Explore</Link>
-          </li>
+          
           <li  onClick={handleOpenModal}>
             <Link href="#">Download</Link>
           </li>
-          <li>
-            <Link href="#">Features</Link>
+          <li >
+            <Link href="/#communities">Features</Link>
           </li>
-          <li>
-            <Link href="#">Help</Link>
+         
+          <li >
+            <Link href="/faq">Faq</Link>
           </li>
-          <li>
-            <Link href="#">Faq</Link>
-          </li>
-          <li>
+          <li >
           <Link href="https://medium.com/@gamicHQ" target="_blank">Blog</Link>
                     </li>
         </ul>
@@ -66,22 +62,18 @@ const Header = () => {
       </Button>
       <Drawer title="" onClose={onClose} open={open} className="bg-black " style={{backgroundColor: "#181818", color:"white", }} >
       <ul className="flex gap-10 flex-col">
-          <li>
-            <Link href="#">Explore</Link>
-          </li>
+          
           <li onClick={handleOpenModal}>
-            <Link href="#">Download</Link>
+            <Link href="#" onClick={onClose}>Download</Link>
           </li>
-          <li>
-            <Link href="#">Features</Link>
+          <li onClick={onClose}>
+            <Link href="/#communities">Features</Link>
           </li>
-          <li>
-            <Link href="#">Help</Link>
+         
+          <li onClick={onClose}>
+            <Link href="faq">Faq</Link>
           </li>
-          <li>
-            <Link href="#">Faq</Link>
-          </li>
-          <li>
+          <li onClick={onClose}>
             <Link href="https://medium.com/@gamicHQ" target="_blank">Blog</Link>
           </li>
         </ul>
