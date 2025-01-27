@@ -185,11 +185,11 @@ const Footer = () => {
                       Discuss
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="#" className="text-gray-400 hover:text-white">
                       Upvote
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                   <Link href="https://medium.com/@gamicHQ" target="_blank"  className="text-gray-400 hover:text-white">
                       Blog

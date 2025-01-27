@@ -6,7 +6,6 @@ import React from "react";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 import { Alert } from 'antd';
-import { message } from "antd";
 
 const page = () => {
   const [formData, setFormData] = useState({
