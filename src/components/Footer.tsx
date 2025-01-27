@@ -181,7 +181,7 @@ const Footer = () => {
                 <h3 className=" font-semibold mb-2">Collaborate</h3>
                 <ul className="gap-2 flex flex-col">
                   <li>
-                    <Link href="#" className="text-gray-400 hover:text-white">
+                    <Link href="discuss" className="text-gray-400 hover:text-white">
                       Discuss
                     </Link>
                   </li>
