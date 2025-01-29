@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Button } from "antd";
 import bg from "/public/bg/dark-bg.webp";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 type Props = {};
 
@@ -42,7 +43,7 @@ const Section4 = (props: Props) => {
         Securely manage, trade, and explore your assets across multiple blockchain networks all in one place. With Gamic, navigating the multi-chain universe is seamless and empowering.
         </p>
 
-        <Button className="border-none shadow-lg px-4 my-5">Learn more</Button>
+        <Link href="https://docs.gamic.gg/welcome-to-gamic/overview/the-gamic-solution/platform-features#web3-focused-integrations" target="_blank">   <Button className="border-none shadow-lg px-4 my-5">Learn more</Button></Link>
       </motion.div>
 
       <div className="flex lg:flex-row flex-col gap-4 lg:p-5 p-2 w-full  items-center justify-center   ">

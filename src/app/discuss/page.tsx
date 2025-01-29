@@ -107,7 +107,7 @@ const page = () => {
               />
             </span>
             <span className="flex flex-col gap-2">
-              <label className="text-[14px]">mobilephone number</label>
+              <label className="text-[14px]">Phone number</label>
               <PhoneInput
                 placeholder="+1 (555) 000-0000"
                 country="US"
@@ -131,7 +131,7 @@ const page = () => {
             <span className="flex item-center gap-2">
               <Checkbox checked={isChecked} onChange={handleCheckboxChange} />
               <p onClick={handleCheckboxChange} style={{ cursor: "pointer" }}>
-                You agree to our friendly privacy policy.
+                You agree to our friendly <a href="/policy" className="underline" target="_blank">privacy policy.</a>
               </p>
             </span>
             <span className="flex flex-col item-center gap-2">

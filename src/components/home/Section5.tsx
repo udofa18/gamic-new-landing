@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { Button } from "antd";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 type Props = {};
 
@@ -38,7 +39,7 @@ const Section5 = (props: Props) => {
         Communicate securely with friends and groups, backed by the power of Web3.
         </p>
 
-        <Button className="border-none shadow-lg px-4 my-5">Learn more</Button>
+     <Link href="https://docs.gamic.gg/welcome-to-gamic/overview/the-gamic-solution/platform-features#security-privacy-controls" target="_blank"> <Button className="border-none shadow-lg px-4 my-5">Learn more</Button></Link>  
       </motion.div>
 
       <div className="flex-col flex gap-4 lg:p-5 p-4 pt-0 lg:flex-row">
