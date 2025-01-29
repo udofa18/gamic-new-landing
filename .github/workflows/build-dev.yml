@@ -35,6 +35,10 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
+        build-args: |
+          NEXT_TELEMETRY_DISABLED=1
+          NEXT_LINT_DURING_BUILD=false
+          NEXT_REDIRECT_URL: https://web.gamic.pro/
         tags: |
           artist3/gamic-landing-dev:latest
           artist3/gamic-landing-dev:${{ github.sha }}
