@@ -23,6 +23,7 @@ COPY . .
 
 # Build the Next.js app (skip type checking and linting for now)
 RUN SKIP_TYPE_CHECK=true npm run build || true
+RUN ls -la .next
 
 # Stage 3: Runner
 FROM node:18-alpine AS runner
