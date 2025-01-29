@@ -36,5 +36,5 @@ jobs:
         file: ./Dockerfile
         push: true
         tags: |
-          artist3/gamic-landing-dev:latest:latest
+          artist3/gamic-landing-dev:latest
           artist3/gamic-landing-dev:latest:${{ github.sha }}
