@@ -101,11 +101,11 @@ const Footer = () => {
                       Communities
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/#create-space" className="text-gray-400 hover:text-white">
                       Create Space
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="/#messangers" className="text-gray-400 hover:text-white">
                       Messangers
@@ -205,7 +205,7 @@ const Footer = () => {
                       Docs
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="#" className="text-gray-400 hover:text-white">
                       Insights
                     </Link>
@@ -214,7 +214,7 @@ const Footer = () => {
                     <Link href="#" className="text-gray-400 hover:text-white">
                       Specs
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <div>
@@ -225,11 +225,11 @@ const Footer = () => {
                       Token
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="#" className="text-gray-400 hover:text-white">
                       Release Schedule
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="https://docs.gamic.gg/welcome-to-gamic" target="_blank" className="text-gray-400 hover:text-white">
                       Whitepaper

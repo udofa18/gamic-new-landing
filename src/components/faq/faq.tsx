@@ -132,7 +132,7 @@ const Faq: React.FC = () => (
       <h1 className='text-3xl font-bold text-center mb-10 font-[Avenir-Heavy]'>Top Questions About Gamic</h1>
       <p className='text-xl font-bold text-center mb-10  text-gray-400'>Need something cleared up? Here are most of our frequently asked questions</p>
     </div>
-  <div className='w-full lg:w-1/2 m-auto text-white py-8 p-4 lg:p-0 '>
+  <div className='w-full lg:w-1/2 m-auto text-white py-8 p-4  '>
    
    <Collapse accordion items={items(panelStyle)} ghost style={{ color:'white'}}  />
   </div>

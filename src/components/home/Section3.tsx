@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Button } from "antd";
 import { motion } from "framer-motion";
 import bg from "/public/bg/dark-bg.webp";
+import Link from "next/link";
 
 type Props = {};
 
@@ -44,7 +45,7 @@ const Section3 = (props: Props) => {
         <p className="lg:text-[20px] text-[18px] text-[#666666]">
         We bring SocialFi, DeFi, GameFi, and AI together in one seamless experience—crafted for gamers, creators, and digital explorers like you. Step into a world where your passions thrive.
         </p>
-        <Button className="border-none shadow-lg px-4 my-5">Learn more</Button>
+        <Link href="https://docs.gamic.gg/welcome-to-gamic/overview/the-gamic-solution/platform-features#community-management-tools" target="_blank">     <Button className="border-none shadow-lg px-4 my-5">Learn more</Button> </Link>   
       </motion.div>
 
       {/* Animated Flex Sections */}
