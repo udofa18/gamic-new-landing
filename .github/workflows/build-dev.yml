@@ -8,7 +8,7 @@ on:
 
 env:
   DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
-  DOCKER_HUB_TOKEN: ${{ secrets.DOCKER_HUB_TOKEN }}
+  DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
   IMAGE_NAME: artist3/gamic-landing-dev:latest
   NEXT_REDIRECT_URL: https://web.gamic.pro/
 
