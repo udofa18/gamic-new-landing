@@ -4,7 +4,7 @@ import Image from "next/image";
 const Section7 = () => {
   return (
     <div className="lg:p-20 py-20 bg-white text-black text-center ">
-        <p className="lg:text-[48px] text-[24px] font-[Avenir-Heavy] ">Backed by Global Leaders. 
+        <p className="lg:text-[48px] text-[24px] font-[Avenir-Heavy] ">Backed by Global Leaders 
         Built for You.</p>
 
         <div className=" gap-6 lg:p-20 p-5 m-auto align-center flex flex-wrap items-center lg:w-[1002px] w-full justify-center">

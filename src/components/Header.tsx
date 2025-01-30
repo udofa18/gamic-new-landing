@@ -50,7 +50,7 @@ const Header = () => {
           </li>
          
           <li >
-            <Link href="/faq">Faq</Link>
+            <Link href="/faq">Faq </Link>
           </li>
           <li >
           <Link href="https://medium.com/@gamicHQ" target="_blank">Blog</Link>
