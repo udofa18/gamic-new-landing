@@ -1,14 +1,27 @@
 [
     {
-        "relation": [
-            "delegate_permission/common.handle_all_urls"
-        ],
-        "target": {
-            "namespace": "android_app",
-            "package_name": "app.gamic.guild.gamic_guild_mobile",
-            "sha256_cert_fingerprints": [
-                "93:2B:EB:D4:1F:C8:67:4B:AB:22:80:0F:A7:2C:31:F1:10:75:82:93:01:5A:2E:CE:92:97:66:31:48:F6:ED:D8"
-            ]
-        }
+      "relation": [
+        "delegate_permission/common.handle_all_urls"
+      ],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.gamic.guild.gamic_guild_mobile",
+        "sha256_cert_fingerprints": [
+          "93:2B:EB:D4:1F:C8:67:4B:AB:22:80:0F:A7:2C:31:F1:10:75:82:93:01:5A:2E:CE:92:97:66:31:48:F6:ED:D8"
+        ]
+      }
+    },
+    {
+      "relation": [
+        "delegate_permission/common.handle_all_urls",
+        "delegate_permission/common.get_login_creds"
+      ],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.gamic.guild.gamic_mobile_v2",
+        "sha256_cert_fingerprints": [
+          "50:F6:E1:F0:21:6A:8B:85:9A:AE:5B:72:BB:74:21:7B:32:F0:7B:AC:47:C9:1F:EC:EF:2F:B5:88:F9:7B:16:22"
+        ]
+      }
     }
-]
+  ]
