@@ -6,7 +6,7 @@ WORKDIR /app
 COPY package.json package-lock.json* ./
 
 # Install dependencies
-RUN npm install --legacy-peer-deps
+RUN npm install
 
 # Stage 2: Builder
 FROM node:18-alpine AS builder
@@ -21,8 +21,8 @@ ENV NEXT_LINT_DURING_BUILD=false
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-# Build the Next.js app (skip type checking and linting for now)
-RUN SKIP_TYPE_CHECK=true npm run build || true
+
+RUN npm run build
 RUN ls -la .next
 
 # Stage 3: Runner
