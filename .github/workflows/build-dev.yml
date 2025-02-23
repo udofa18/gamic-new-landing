@@ -1,14 +1,14 @@
-name: Docker Build and Push
+name: Docker Build and Push Development
 
 on:
   push:
-    branches: [ "development" ]
+    branches: [ "staging" ]
   pull_request:
-    branches: [ "development" ]
+    branches: [ "staging" ]
 
 env:
   DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
-  DOCKER_HUB_TOKEN: ${{ secrets.DOCKER_HUB_TOKEN }}
+  DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
   IMAGE_NAME: artist3/gamic-landing-dev:latest
   NEXT_REDIRECT_URL: https://web.gamic.pro/
 
@@ -35,6 +35,10 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
+        build-args: |
+          NEXT_TELEMETRY_DISABLED=1
+          NEXT_LINT_DURING_BUILD=false
+          NEXT_REDIRECT_URL: https://web.gamic.pro/
         tags: |
-          artist3/gamic-landing-dev:latest:latest
-          artist3/gamic-landing-dev:latest:${{ github.sha }}
+          artist3/gamic-landing-dev:latest
+          artist3/gamic-landing-dev:${{ github.sha }}

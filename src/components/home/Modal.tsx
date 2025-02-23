@@ -33,7 +33,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
             <AiOutlineClose />{" "}
           </button>
         </div>
-        <h2 className="text-[24px] font-bold mb-4 text-center">Download the app today</h2>
+        <h2 className="text-[24px] font-bold mb-4 text-center">Download the app today </h2>
         <div className="flex justify-around flex-wrap gap-4">
           <Link
             href="https://apps.apple.com/us/app/gamic-spaces-chat-connect/id1673683070"

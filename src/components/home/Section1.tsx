@@ -71,7 +71,7 @@ const Section1 = (props: Props) => {
             variants={containerVariants}
             transition={{ duration: 0.3 }}
             viewport={{ once: false, amount: 0.3 }}
-          >
+          > 
             <Link href='https://web.gamic.app'>
             <button className="bg-white inner-shadow2 hover:bg-white/50 text-black p-4 border-none  w-full rounded-md items-center flex gap-4 text-center justify-center">
               <img

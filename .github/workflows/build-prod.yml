@@ -1,4 +1,4 @@
-name: Docker Build and Push
+name: Docker Build and Push Production
 
 on:
 #  push:
@@ -8,7 +8,7 @@ on:
 
 env:
   DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
-  DOCKER_HUB_TOKEN: ${{ secrets.DOCKER_HUB_TOKEN }}
+  DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
   IMAGE_NAME: artist3/gamic-landing-prod:latest
   NEXT_REDIRECT_URL: https://web.gamic.app/
 
@@ -35,6 +35,10 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
+        build-args: |
+          NEXT_TELEMETRY_DISABLED=1
+          NEXT_LINT_DURING_BUILD=false
+          NEXT_REDIRECT_URL: https://web.gamic.app/
         tags: |
-          artist3/gamic-landing-prod:latest:latest
-          artist3/gamic-landing-prod:latest:${{ github.sha }}
+          artist3/gamic-landing-prod:latest
+          artist3/gamic-landing-prod:${{ github.sha }}
